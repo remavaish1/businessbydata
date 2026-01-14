@@ -58,8 +58,8 @@ const Contact: React.FC = () => {
 
               <div className="mt-12 pt-8 border-t border-zinc-100">
                 <p className="text-sm font-bold uppercase tracking-widest text-zinc-400 mb-2">Direct Contact</p>
-                <p className="text-lg text-zinc-900 font-medium">hello@businessbydata.com</p>
-                <p className="text-zinc-500 text-sm mt-1">Lagos, Nigeria | Global Remote Advisory</p>
+                <p className="text-lg text-zinc-900 font-medium">contact@businessbydata.co</p>
+                <p className="text-zinc-500 text-sm mt-1">Lagos, Nigeria | Global Hybrid Advisory</p>
               </div>
             </div>
 
