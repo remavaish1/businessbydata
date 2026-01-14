@@ -5,7 +5,7 @@ import react from "@vitejs/plugin-react";
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, ".", "");
   return {
-    base: "/businessbydata/", // ✅ required for GitHub Pages project site
+    base: "/", // ✅ ROOT because you are using businessbydata.co
     server: {
       port: 3000,
       host: "0.0.0.0",
