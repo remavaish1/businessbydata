@@ -10,9 +10,10 @@ const Home: React.FC = () => {
       <section className="py-24 md:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-zinc-900 leading-tight">
-              Decision-support data strategy for leaders who need clarity, not complexity.
-            </h1>
+            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight text-zinc-900 leading-[1.05]">
+             Make Data Usable. Make Better Decisions.
+             </h1>
+
             <p className="mt-8 text-xl text-zinc-500 leading-relaxed font-light">
               We help organizations understand, structure, and use data effectively. 
               Get clear direction and measurement logic without building complex systems or hiring massive teams.
@@ -34,7 +35,7 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p className="text-sm font-medium uppercase tracking-[0.2em] text-zinc-400 mb-2">Our Distinction</p>
             <p className="text-lg text-zinc-700 font-medium italic">
-                "We define the logic and governance. We do not build the pipelines. We bridge the gap between business goals and technical execution."
+                "We define decision clarity.We don’t build pipelines.We bridge business goals and technical execution.”
             </p>
         </div>
       </section>
