@@ -67,7 +67,7 @@ const Home: React.FC = () => {
               <div key={idx} className="p-8 border border-zinc-100 hover:border-zinc-300 transition-all rounded-sm bg-white group">
                 <div className="text-2xl mb-4 group-hover:scale-110 transition-transform inline-block">{card.icon}</div>
                 <h3 className="text-lg font-semibold text-zinc-900 mb-2">{card.title}</h3>
-                <p className="text-sm text-zinc-500 leading-relaxed">Expert advisory to align your metrics with strategic growth objectives.</p>
+                <p className="text-sm text-zinc-500 leading-relaxed">We define the questions, metrics, and success measures that matter most to leadership, ensuring performance is evaluated against decisions and outcomes—not vanity metrics or disconnected reports.</p>
               </div>
             ))}
           </div>
