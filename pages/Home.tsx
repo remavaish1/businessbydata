@@ -10,9 +10,11 @@ const Home: React.FC = () => {
       <section className="py-24 md:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight text-zinc-900 leading-[1.05]">
-             Make Data Usable. Make Better Decisions.
-             </h1>
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight text-zinc-900 leading-[1.05]">
+          <span className="whitespace-nowrap">Make Data Usable.</span>{' '}
+           Make Better Decisions.
+           </h1>
+
 
             <p className="mt-8 text-xl text-zinc-500 leading-relaxed font-light">
               We help organizations understand, structure, and use data effectively. 
