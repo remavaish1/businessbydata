@@ -49,7 +49,7 @@ const Home: React.FC = () => {
             <div className="max-w-xl">
               <h2 className="text-3xl font-bold tracking-tight text-zinc-900">What We Do</h2>
               <p className="mt-4 text-zinc-500 leading-relaxed">
-                We sit between leadership and technical teams to ensure your data serves your strategy.
+                We work with leadership teams to ensure data drives clear, confident decisions - not just reporting.
               </p>
             </div>
             <Link to="/services" className="text-sm font-semibold text-zinc-900 border-b border-zinc-900 pb-1 hover:text-zinc-500 hover:border-zinc-500 transition-colors">
@@ -59,9 +59,9 @@ const Home: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { title: "Decision Support & KPI Design", icon: "📊" },
+              { title: "Decision Clarity & KPI Design", icon: "📊" },
               { title: "Business Data Definition", icon: "📝" },
-              { title: "Governance & Discipline", icon: "⚖️" },
+              { title: "Analytics Strategy & Decision Discipline", icon: "⚖️" },
               { title: "Fractional Data Leadership", icon: "👔" }
             ].map((card, idx) => (
               <div key={idx} className="p-8 border border-zinc-100 hover:border-zinc-300 transition-all rounded-sm bg-white group">
