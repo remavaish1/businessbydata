@@ -1,7 +1,22 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
+
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxrae42kcw1Ik662iIfzvVH58oC477cBu_mXKeAYTL64sN8dJU-wa5UvNEaS8vf9onZ6Q/exec"; // must end with /exec
+
+const CONTACT_EMAIL = "connect@businessbydata.co";
+const LINKEDIN_PROFILE_URL = "https://www.linkedin.com/in/rema-vaish/";
+
+type FormData = {
+  name: string;
+  email: string;
+  company: string;
+  phone: string;
+  message: string;
+};
+
+type FormErrors = Partial<Record<keyof FormData, string>>;
 
 const Contact: React.FC = () => {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
     company: "",
@@ -10,58 +25,93 @@ const Contact: React.FC = () => {
   });
 
   const [submitted, setSubmitted] = useState(false);
-  const [errors, setErrors] = useState<Partial<Record<keyof typeof formData, string>>>({});
+  const [loading, setLoading] = useState(false);
+  const [errors, setErrors] = useState<FormErrors>({});
 
-  // Strict-ish validation:
-  // - Email: browser already checks format via type="email", but we also sanity-check.
-  // - Phone: must include country code (starts with + and 8-15 digits total, allowing spaces/dashes).
-  const validate = () => {
-    const newErrors: Partial<Record<keyof typeof formData, string>> = {};
+  const emailRegex = useMemo(() => /^[^\s@]+@[^\s@]+\.[^\s@]+$/, []);
+  const normalize = (v: string) => v.trim();
 
-    const name = formData.name.trim();
-    const email = formData.email.trim();
-    const company = formData.company.trim();
-    const phone = formData.phone.trim();
-    const message = formData.message.trim();
+  const validate = (): boolean => {
+    const nextErrors: FormErrors = {};
 
-    if (!name) newErrors.name = "Full name is required.";
+    const name = normalize(formData.name);
+    const email = normalize(formData.email);
+    const company = normalize(formData.company);
+    const phone = normalize(formData.phone);
+    const message = normalize(formData.message);
+
+    if (!name) nextErrors.name = "Full name is required.";
 
     if (!email) {
-      newErrors.email = "Email address is required.";
-    } else {
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailRegex.test(email)) newErrors.email = "Please enter a valid email address.";
+      nextErrors.email = "Email address is required.";
+    } else if (!emailRegex.test(email)) {
+      nextErrors.email = "Please enter a valid email address.";
     }
 
-    if (!company) newErrors.company = "Company name is required.";
+    if (!company) nextErrors.company = "Company name is required.";
 
     if (!phone) {
-      newErrors.phone = "Phone number is required.";
+      nextErrors.phone = "Phone number is required.";
     } else {
-      // Require a country code: +<country><number>
-      // Allows spaces, dashes, parentheses; must still total 8–15 digits.
       const digitsOnly = phone.replace(/\D/g, "");
       const hasPlus = phone.startsWith("+");
       if (!hasPlus) {
-        newErrors.phone = "Include country code (e.g., +234 801 234 5678).";
+        nextErrors.phone = "Include country code (e.g., +234 801 234 5678).";
       } else if (digitsOnly.length < 8 || digitsOnly.length > 15) {
-        newErrors.phone = "Enter a valid phone number with country code (8–15 digits).";
+        nextErrors.phone = "Enter a valid phone number with country code (8–15 digits).";
       }
     }
 
-    if (!message) newErrors.message = "Message is required.";
+    if (!message) nextErrors.message = "Message is required.";
 
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
+    setErrors(nextErrors);
+    return Object.keys(nextErrors).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const resetForm = () => {
+    setFormData({ name: "", email: "", company: "", phone: "", message: "" });
+    setErrors({});
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (loading) return;
+
+    setSubmitted(false);
 
     if (!validate()) return;
 
-    console.log("Form submitted:", formData);
-    setSubmitted(true);
+    setLoading(true);
+
+    try {
+      const payload = {
+        fullName: normalize(formData.name),
+        email: normalize(formData.email),
+        company: normalize(formData.company),
+        phone: normalize(formData.phone),
+        message: normalize(formData.message),
+        page: window.location.href,
+        userAgent: navigator.userAgent,
+      };
+
+      const res = await fetch(SCRIPT_URL, {
+        method: "POST",
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify(payload),
+      });
+
+      // Apps Script returns JSON { ok: true } or { ok:false, error:"..." }
+      const json = await res.json();
+      if (!json?.ok) throw new Error(json?.error || "Submission failed.");
+
+      setSubmitted(true);
+      resetForm();
+    } catch (err) {
+      console.error(err);
+      alert("Could not submit right now. Please email contact@businessbydata.co.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -78,7 +128,9 @@ const Contact: React.FC = () => {
               </p>
 
               <div className="p-8 bg-zinc-50 border border-zinc-100 rounded-sm">
-                <h3 className="text-lg font-bold text-zinc-900 mb-6">What to expect from the first call:</h3>
+                <h3 className="text-lg font-bold text-zinc-900 mb-6">
+                  What to expect from the first call:
+                </h3>
                 <ul className="space-y-6">
                   <li className="flex items-start gap-4">
                     <div className="w-6 h-6 rounded-full bg-zinc-900 text-white flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">
@@ -86,7 +138,9 @@ const Contact: React.FC = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-zinc-900">Problem Diagnostic</p>
-                      <p className="text-sm text-zinc-500">A 30-minute deep dive into your current decision-making bottlenecks.</p>
+                      <p className="text-sm text-zinc-500">
+                        A 30-minute deep dive into your current decision-making bottlenecks.
+                      </p>
                     </div>
                   </li>
                   <li className="flex items-start gap-4">
@@ -95,7 +149,9 @@ const Contact: React.FC = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-zinc-900">Strategic Alignment</p>
-                      <p className="text-sm text-zinc-500">Initial thoughts on whether you need structural logic or just better governance.</p>
+                      <p className="text-sm text-zinc-500">
+                        Initial thoughts on whether you need structural logic or just better governance.
+                      </p>
                     </div>
                   </li>
                   <li className="flex items-start gap-4">
@@ -104,19 +160,39 @@ const Contact: React.FC = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-zinc-900">Tailored Proposal</p>
-                      <p className="text-sm text-zinc-500">A clear outline of how Business By Data can help, with defined scope and deliverables.</p>
+                      <p className="text-sm text-zinc-500">
+                        A clear outline of how Business By Data can help, with defined scope and deliverables.
+                      </p>
                     </div>
                   </li>
                 </ul>
               </div>
 
               <div className="mt-12 pt-8 border-t border-zinc-100">
-                <p className="text-sm font-bold uppercase tracking-widest text-zinc-400 mb-2">Direct Contact</p>
-                <p className="text-lg text-zinc-900 font-medium">
-                  <a href="mailto:connect@businessbydata.co" className="hover:underline">
-                    connect@businessbydata.co
+                <p className="text-sm font-bold uppercase tracking-widest text-zinc-400 mb-2">
+                  Direct Contact
+                </p>
+
+                <p className="text-lg font-medium text-zinc-900">
+                  <a
+                    href={`mailto:${CONTACT_EMAIL}?subject=Business%20Inquiry`}
+                    className="hover:underline"
+                  >
+                    {CONTACT_EMAIL}
                   </a>
                 </p>
+
+                <p className="mt-2 text-sm text-zinc-500">
+                  <a
+                    href={LINKEDIN_PROFILE_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-medium text-zinc-900 hover:underline"
+                  >
+                    Connect on LinkedIn
+                  </a>
+                </p>
+
                 <p className="text-zinc-500 text-sm mt-1">Lagos, Nigeria | Global Hybrid Advisory</p>
               </div>
             </div>
@@ -136,7 +212,7 @@ const Contact: React.FC = () => {
                   <button
                     onClick={() => {
                       setSubmitted(false);
-                      setErrors({});
+                      resetForm();
                     }}
                     className="mt-8 text-sm font-semibold text-zinc-900 border-b border-zinc-900 pb-1"
                   >
@@ -240,13 +316,14 @@ const Contact: React.FC = () => {
 
                   <button
                     type="submit"
-                    className="w-full bg-zinc-900 text-white py-4 rounded-sm font-semibold hover:bg-zinc-800 transition-all shadow-md active:scale-[0.98]"
+                    disabled={loading}
+                    className="w-full bg-zinc-900 text-white py-4 rounded-sm font-semibold hover:bg-zinc-800 transition-all shadow-md active:scale-[0.98] disabled:opacity-50"
                   >
-                    Send Message
+                    {loading ? "Sending..." : "Send Message"}
                   </button>
 
                   <p className="text-xs text-zinc-400 leading-relaxed">
-                    By submitting, you confirm your details are accurate and include a reachable email and an international phone number (with country code).
+                    Please include a reachable email and an international phone number (with country code).
                   </p>
                 </form>
               )}
