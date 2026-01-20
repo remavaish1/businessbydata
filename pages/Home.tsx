@@ -105,36 +105,52 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* What You Get Section */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-1 gap-20 items-center">
-            <div>
-              <h2 className="text-3xl font-bold tracking-tight text-zinc-900 mb-8">What You Get</h2>
-              <p className="text-zinc-500 mb-12 leading-relaxed">
-                Our engagement results in concrete, professional documentation that empowers your teams to implement with precision.
-              </p>
+      {/* What We Do Section */}
+<section className="py-24 bg-white">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    {/* Centered header like Our Distinction */}
+    <div className="max-w-3xl mx-auto text-center mb-16">
+      <h2 className="text-3xl font-bold tracking-tight text-zinc-900">
+        What We Do
+      </h2>
+      <p className="mt-4 text-zinc-500 leading-relaxed">
+        We work with leadership teams to ensure data drives clear, confident decisions – not just reporting.
+      </p>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                {[
-                  "KPI Catalogue", "Metric Definitions", "Key Data Field IDs",
-                  "Reporting Requirements", "Governance Model", "Decision Review Cadence",
-                  "Implementation Handover"
-                ].map((item, i) => (
-                  <div key={i} className="flex items-start gap-3">
-                    <svg className="h-5 w-5 text-zinc-900 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span className="text-sm font-medium text-zinc-700">{item}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
+      <div className="mt-6">
+        <Link
+          to="/services"
+          className="inline-block text-sm font-semibold text-zinc-900 border-b border-zinc-900 pb-1 hover:text-zinc-500 hover:border-zinc-500 transition-colors"
+        >
+          Explore Services
+        </Link>
+      </div>
+    </div>
 
-            {/* Removed: Sample Deliverable Preview (right side picture block) */}
-          </div>
+    {/* Cards – centered grid */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+      {[
+        { title: "Decision Clarity & KPI Design", icon: "📊" },
+        { title: "Business Data Definition", icon: "📝" },
+        { title: "Analytics Strategy & Decision Discipline", icon: "⚖️" },
+        { title: "Fractional Data Leadership", icon: "👔" }
+      ].map((card, idx) => (
+        <div
+          key={idx}
+          className="p-8 border border-zinc-100 hover:border-zinc-300 transition-all rounded-sm bg-white text-center"
+        >
+          <div className="text-2xl mb-4">{card.icon}</div>
+          <h3 className="text-lg font-semibold text-zinc-900">
+            {card.title}
+          </h3>
         </div>
-      </section>
+      ))}
+    </div>
+
+  </div>
+</section>
+
 
       {/* Portfolio Preview */}
       <section className="py-24 bg-zinc-50 border-y border-zinc-100">
