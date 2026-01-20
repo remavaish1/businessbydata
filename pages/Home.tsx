@@ -87,24 +87,39 @@ const Home: React.FC = () => {
       </section>
 
       {/* How We Work Section */}
-      <section className="py-24 bg-zinc-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-xl mb-16">
-            <h2 className="text-3xl font-bold tracking-tight">How We Work</h2>
-            <p className="mt-4 text-zinc-400 leading-relaxed">A structured approach to turning data into an asset.</p>
-          </div>
+<section className="py-24 bg-zinc-900 text-white">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
-            {PROCESS_STEPS.map((step) => (
-              <div key={step.number} className="relative">
-                <div className="text-5xl font-black text-white mb-6">{step.number}</div>
-                <h3 className="text-xl font-semibold mb-4">{step.title}</h3>
-                <p className="text-sm text-zinc-400 leading-relaxed">{step.description}</p>
-              </div>
-            ))}
+    {/* Centered Header */}
+    <div className="max-w-3xl mx-auto text-center mb-16">
+      <h2 className="text-3xl font-bold tracking-tight">
+        How We Work
+      </h2>
+      <p className="mt-4 text-zinc-400 leading-relaxed">
+        A structured approach to turning data into an asset.
+      </p>
+    </div>
+
+    {/* Steps */}
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-6xl mx-auto">
+      {PROCESS_STEPS.map((step) => (
+        <div key={step.number} className="relative text-center md:text-left">
+          <div className="text-5xl font-black text-white mb-6">
+            {step.number}
           </div>
+          <h3 className="text-xl font-semibold mb-4">
+            {step.title}
+          </h3>
+          <p className="text-sm text-zinc-400 leading-relaxed">
+            {step.description}
+          </p>
         </div>
-      </section>
+      ))}
+    </div>
+
+  </div>
+</section>
+
 
       {/* What You Get Section (Centered) */}
       <section className="py-24 bg-white">
