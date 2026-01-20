@@ -11,8 +11,18 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight text-zinc-900 leading-[1.05]">
-          <span className="whitespace-nowrap">Make Data Usable.</span>{' '}
-          <span className="whitespace-nowrap">Make Better Decisions.</span>{' '}           
+          <span className="block text-zinc-900">
+  Make Data
+</span>
+<span className="block whitespace-nowrap text-[#2FB2A2]">
+  Usable.
+</span>
+          <span className="block text-zinc-900">
+  Make Better
+</span>
+<span className="block whitespace-nowrap text-[#2FB2A2]">
+  Decisions.
+</span>         
            </h1>
 
 
