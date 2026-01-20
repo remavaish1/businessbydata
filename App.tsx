@@ -199,10 +199,10 @@ const Footer: React.FC = () => {
             {/* Updated email */}
             <p className="text-sm text-zinc-500 mt-2">
               <a
-                href="mailto:contact@businessbydata.co?subject=Business%20Inquiry"
+                href="mailto:connect@businessbydata.co?subject=Business%20Inquiry"
                 className="hover:text-zinc-900"
               >
-                contact@businessbydata.co
+                connect@businessbydata.co
               </a>
             </p>
 
