@@ -44,46 +44,23 @@ const Home: React.FC = () => {
       </section>
 
       {/* What We Do Section */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row md:justify-between items-end mb-16 gap-6">
-            <div className="max-w-xl">
-              <h2 className="text-3xl font-bold tracking-tight text-zinc-900">What We Do</h2>
-              <p className="mt-4 text-zinc-500 leading-relaxed">
-                <span className="whitespace-nowrap">
-                  We work with leadership teams to ensure data drives clear, confident decisions - not just reporting.
-                </span>{' '}
-              </p>
-            </div>
-            <Link
-              to="/services"
-              className="text-sm font-semibold text-zinc-900 border-b border-zinc-900 pb-1 hover:text-zinc-500 hover:border-zinc-500 transition-colors"
-            >
-              Explore Services
-            </Link>
-          </div>
+<section className="py-24 bg-white">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    {/* Centered Header */}
+    <div className="max-w-3xl mx-auto text-center mb-16">
+      <h2 className="text-3xl font-bold tracking-tight text-zinc-900">
+        What We Do
+      </h2>
+      <p className="mt-4 text-zinc-500 leading-relaxed">
+        We work with leadership teams to ensure data drives clear, confident decisions – not just reporting.
+      </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              { title: "Decision Clarity & KPI Design", icon: "📊" },
-              { title: "Business Data Definition", icon: "📝" },
-              { title: "Analytics Strategy & Decision Discipline", icon: "⚖️" },
-              { title: "Fractional Data Leadership", icon: "👔" }
-            ].map((card, idx) => (
-              <div
-                key={idx}
-                className="p-8 border border-zinc-100 hover:border-zinc-300 transition-all rounded-sm bg-white group"
-              >
-                <div className="text-2xl mb-4 group-hover:scale-110 transition-transform inline-block">
-                  {card.icon}
-                </div>
-                <h3 className="text-lg font-semibold text-zinc-900 mb-2">{card.title}</h3>
-                <p className="text-sm text-zinc-500 leading-relaxed"></p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <div className="mt-6">
+        <Link
+          to="/services"
+          className="inline-block text-sm font-semibold text-zinc-900 border-b border-zinc-900 pb-1 hover:text-zinc-500
+
 
       {/* How We Work Section */}
       <section className="py-24 bg-zinc-900 text-white">
