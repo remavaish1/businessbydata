@@ -66,7 +66,7 @@ const About: React.FC = () => {
             <div className="relative">
               <div className="aspect-[3/4] rounded-sm overflow-hidden border border-zinc-100 shadow-2xl relative grayscale hover:grayscale-0 transition-all duration-1000">
                 <img 
-                  src="/rema11.jpg" 
+                  src="/rema11.JPG" 
                   alt="Rema Vaish" 
                   className="w-full h-full object-cover"
                 />
