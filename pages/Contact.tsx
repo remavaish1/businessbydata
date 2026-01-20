@@ -108,7 +108,7 @@ const Contact: React.FC = () => {
       resetForm();
     } catch (err) {
       console.error(err);
-      alert("Could not submit right now. Please email contactf@businessbydata.co.");
+      alert("Could not submit right now. Please email connect@businessbydata.co.");
     } finally {
       setLoading(false);
     }
