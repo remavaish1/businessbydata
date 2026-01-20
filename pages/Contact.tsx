@@ -101,8 +101,21 @@ const Contact: React.FC = () => {
       });
 
       // Apps Script returns JSON { ok: true } or { ok:false, error:"..." }
-      const json = await res.json();
-      if (!json?.ok) throw new Error(json?.error || "Submission failed.");
+      const raw = await res.text();
+
+let json: any = null;
+try {
+  json = JSON.parse(raw);
+} catch {}
+
+if (!res.ok) {
+  throw new Error(`HTTP ${res.status}: ${raw.slice(0, 200)}`);
+}
+
+if (!json?.ok) {
+  throw new Error(json?.error || `Unexpected response: ${raw.slice(0, 200)}`);
+}
+
 
       setSubmitted(true);
       resetForm();
