@@ -43,24 +43,48 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* What We Do Section */}
-<section className="py-24 bg-white">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    
-    {/* Centered Header */}
-    <div className="max-w-3xl mx-auto text-center mb-16">
-      <h2 className="text-3xl font-bold tracking-tight text-zinc-900">
-        What We Do
-      </h2>
-      <p className="mt-4 text-zinc-500 leading-relaxed">
-        We work with leadership teams to ensure data drives clear, confident decisions – not just reporting.
-      </p>
+      {/* What We Do Section (Centered like Our Distinction) */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Centered Header */}
+          <div className="max-w-3xl mx-auto text-center mb-16">
+            <h2 className="text-3xl font-bold tracking-tight text-zinc-900">What We Do</h2>
+            <p className="mt-4 text-zinc-500 leading-relaxed">
+              We work with leadership teams to ensure data drives clear, confident decisions – not just reporting.
+            </p>
 
-      <div className="mt-6">
-        <Link
-          to="/services"
-          className="inline-block text-sm font-semibold text-zinc-900 border-b border-zinc-900 pb-1 hover:text-zinc-500
+            <div className="mt-6">
+              <Link
+                to="/services"
+                className="inline-block text-sm font-semibold text-zinc-900 border-b border-zinc-900 pb-1 hover:text-zinc-500 hover:border-zinc-500 transition-colors"
+              >
+                Explore Services
+              </Link>
+            </div>
+          </div>
 
+          {/* Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              { title: "Decision Clarity & KPI Design", icon: "📊" },
+              { title: "Business Data Definition", icon: "📝" },
+              { title: "Analytics Strategy & Decision Discipline", icon: "⚖️" },
+              { title: "Fractional Data Leadership", icon: "👔" }
+            ].map((card, idx) => (
+              <div
+                key={idx}
+                className="p-8 border border-zinc-100 hover:border-zinc-300 transition-all rounded-sm bg-white group"
+              >
+                <div className="text-2xl mb-4 group-hover:scale-110 transition-transform inline-block">
+                  {card.icon}
+                </div>
+                <h3 className="text-lg font-semibold text-zinc-900 mb-2">{card.title}</h3>
+                <p className="text-sm text-zinc-500 leading-relaxed"></p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* How We Work Section */}
       <section className="py-24 bg-zinc-900 text-white">
@@ -91,7 +115,6 @@ const Home: React.FC = () => {
               Our engagement results in concrete, professional documentation that empowers your teams to implement with precision.
             </p>
 
-            {/* Keep items readable: centered block with left-aligned list */}
             <div className="max-w-3xl mx-auto text-left">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {[
