@@ -95,7 +95,7 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
             {PROCESS_STEPS.map((step) => (
               <div key={step.number} className="relative">
-                <div className="text-5xl font-black text-white/10 mb-6">{step.number}</div>
+                <div className="text-5xl font-black text-white mb-6">{step.number}</div>
                 <h3 className="text-xl font-semibold mb-4">{step.title}</h3>
                 <p className="text-sm text-zinc-400 leading-relaxed">{step.description}</p>
               </div>
