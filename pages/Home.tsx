@@ -16,7 +16,7 @@ const Home: React.FC = () => {
               <span className="block whitespace-nowrap text-[#2FB2A2]">Decisions.</span>
             </h1>
 
-            <p className="mt-8 text-3xl text-zinc-500 leading-relaxed font-light">
+            <p className="mt-8 text-2xl text-zinc-500 leading-relaxed font-light">
               We help organizations understand, structure, and use data effectively.
               Get clear direction and measurement logic without building complex systems or hiring massive teams.
             </p>
