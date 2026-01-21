@@ -58,12 +58,7 @@ const Header: React.FC = () => {
                 {link.name}
               </Link>
             ))}
-            <Link
-              to={DISCOVERY_CALL_LINK.replace("#", "")}
-              className="bg-zinc-900 text-white px-5 py-2.5 text-sm font-medium rounded-sm hover:bg-zinc-800 transition-all shadow-sm"
-            >
-              {PRIMARY_CTA_TEXT}
-            </Link>
+        
           </div>
 
           {/* Mobile menu button */}
@@ -113,13 +108,7 @@ const Header: React.FC = () => {
               {link.name}
             </Link>
           ))}
-          <Link
-            to={DISCOVERY_CALL_LINK.replace("#", "")}
-            onClick={() => setIsOpen(false)}
-            className="block text-center bg-zinc-900 text-white px-4 py-3 text-sm font-medium rounded-sm"
-          >
-            {PRIMARY_CTA_TEXT}
-          </Link>
+          
         </div>
       )}
     </header>
