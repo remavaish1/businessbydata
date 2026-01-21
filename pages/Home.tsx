@@ -79,81 +79,10 @@ const Home: React.FC = () => {
 </section>
 
 
-      {/* What You Get Section (Centered) */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-zinc-900 mb-8">What You Get</h2>
-            <p className="text-zinc-500 mb-12 leading-relaxed">
-              Our engagement results in concrete, professional documentation that empowers your teams to implement with precision.
-            </p>
+     
 
-            <div className="max-w-3xl mx-auto text-left">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                {[
-                  "KPI Catalogue", "Metric Definitions", "Key Data Field IDs",
-                  "Reporting Requirements", "Governance Model", "Decision Review Cadence",
-                  "Implementation Handover"
-                ].map((item, i) => (
-                  <div key={i} className="flex items-start gap-3">
-                    <svg className="h-5 w-5 text-zinc-900 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span className="text-sm font-medium text-zinc-700">{item}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Portfolio Preview */}
-      <section className="py-24 bg-zinc-50 border-y border-zinc-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-zinc-900 mb-12">Proven Impact</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {CASE_STUDIES.slice(0, 3).map((study) => (
-              <div
-                key={study.id}
-                className="text-left bg-white p-8 rounded-sm shadow-sm hover:shadow-md transition-all border border-zinc-100"
-              >
-                <span className="text-[10px] font-bold uppercase tracking-widest text-zinc-400">{study.industry}</span>
-                <h3 className="text-lg font-semibold text-zinc-900 mt-2 mb-4">{study.title}</h3>
-                <p className="text-sm text-zinc-500 line-clamp-3 mb-6">{study.context}</p>
-                <Link to={`/portfolio`} className="text-sm font-medium text-zinc-900 hover:text-zinc-600">
-                  View Case Study →
-                </Link>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-16">
-            <Link
-              to="/portfolio"
-              className="text-sm font-semibold border border-zinc-900 px-6 py-3 hover:bg-zinc-900 hover:text-white transition-all"
-            >
-              View All Case Studies
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Banner */}
-      <section className="py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center bg-zinc-900 text-white py-16 rounded-sm shadow-2xl">
-          <h2 className="text-3xl font-bold tracking-tight mb-6">Ready to simplify your data direction?</h2>
-          <p className="text-zinc-400 mb-10 text-lg">
-            Book a call to discuss how we can bring clarity to your decision-making.
-          </p>
-          <Link
-            to={DISCOVERY_CALL_LINK.replace('#', '')}
-            className="bg-white text-zinc-900 px-10 py-4 text-base font-semibold rounded-sm hover:bg-zinc-100 transition-all"
-          >
-            {PRIMARY_CTA_TEXT}
-          </Link>
-        </div>
-      </section>
+     
+     
     </div>
   );
 };
