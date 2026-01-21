@@ -198,13 +198,26 @@ const Footer: React.FC = () => {
 
             {/* Updated email */}
             <p className="text-sm text-zinc-500 mt-2">
-              <a
-                href="mailto:connect@businessbydata.co?subject=Business%20Inquiry"
-                className="hover:text-zinc-900"
-              >
-                connect@businessbydata.co
-              </a>
-            </p>
+            <a
+              href="mailto:connect@businessbydata.co?subject=Business%20Inquiry"
+              className="inline-flex items-center gap-2 hover:text-zinc-900 transition-colors"
+            >
+            <svg
+            className="w-4 h-4 text-zinc-400"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={1.5}
+            >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M21.75 6.75v10.5A2.25 2.25 0 0119.5 19.5h-15A2.25 2.25 0 012.25 17.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15A2.25 2.25 0 002.25 6.75m19.5 0l-9.75 6.75L2.25 6.75"
+      />
+    </svg>
+    connect@businessbydata.co
+  </a>
+</p>
 
             {/* Updated LinkedIn */}
             <div className="mt-4">
