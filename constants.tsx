@@ -180,24 +180,31 @@ export const CASE_STUDIES: CaseStudy[] = [
 
 
   
-  {
-    id: "fmcg-kpi",
-    title: "FMCG Supply Chain Decision Framework",
-    industry: "FMCG",
-    context:
-      "An FMCG company with complex logistics and finance data silos.",
-    problem:
-      "Leadership lacked visibility into how supply delays affected margins.",
-    approach:
-      "Designed cross-functional KPIs linking logistics and finance.",
-    deliverables: [
-      "Measurement Foundation Document",
-      "Decision Review Cadence",
-    ],
-    outcomes: [
-      "Faster reaction to supply disruptions",
-      "Margin clarity at SKU level",
-    ],
-    tags: ["FMCG", "Decision Support"],
-  },
+{
+  id: "fmcg-decision-framework",
+  title: "FMCG Supply Chain Decision Framework",
+  industry: "FMCG",
+  context:
+    "A regional FMCG business struggling with forecast volatility, margin leakage, and inconsistent pricing decisions across markets.",
+  problem:
+    "Different markets and sales teams used different assumptions for demand, margins, and pricing. Forecasts changed monthly without clear drivers, low-margin SKUs went unnoticed, and leadership time was spent reconciling numbers instead of making decisions.",
+  approach:
+    "Established a single commercial logic for forecasting, margin, and pricing decisions. Standardized demand reviews, introduced structured profitability analysis, and shifted leadership discussions from reporting to decision-focused reviews.",
+  deliverables: [
+    "Unified Demand Forecasting Model (Actuals, Open Orders, YTG)",
+    "Margin & Profitability Diagnostic (Product, Category, Market)",
+    "Pricing Impact & Scenario Analysis Framework",
+    "Executive Performance Review Structure",
+    "Forecast Accuracy & Commercial KPIs"
+  ],
+  outcomes: [
+    "Improved forecast stability and leadership confidence",
+    "Early visibility of margin erosion and low-profit SKUs",
+    "Stronger pricing discipline across markets",
+    "Faster, clearer commercial decisions",
+    "One version of commercial truth across Sales, Finance, and Supply Chain"
+  ],
+  tags: ["FMCG", "Decision Support"]
+}
+
 ];
