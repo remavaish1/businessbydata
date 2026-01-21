@@ -72,15 +72,7 @@ const Services: React.FC = () => {
             ))}
           </div>
 
-          <div className="mt-20 py-16 border-t border-zinc-200 text-center">
-            <h3 className="text-2xl font-bold text-zinc-900 mb-6">Need a custom roadmap?</h3>
-            <Link
-              to={DISCOVERY_CALL_LINK.replace("#", "")}
-              className="inline-flex items-center bg-zinc-900 text-white px-8 py-4 text-base font-medium rounded-sm hover:bg-zinc-800 transition-all shadow-lg"
-            >
-              {PRIMARY_CTA_TEXT}
-            </Link>
-          </div>
+     
         </div>
       </section>
     </div>
