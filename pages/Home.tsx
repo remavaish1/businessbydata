@@ -26,17 +26,17 @@ const Home: React.FC = () => {
       </section>
 
   
-{/* Distinction Section */}
-<section className="py-16 md:py-20 mb-20 bg-zinc-900">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    <p className="text-sm md:text-base font-bold uppercase tracking-[0.25em] text-zinc-400 mb-4">
+<section className="py-16 bg-zinc-900">
+  <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <p className="text-xs font-semibold uppercase tracking-[0.25em] text-zinc-400 mb-4">
       Our Distinction
     </p>
-    <p className="text-xl md:text-2xl lg:text-3xl text-white font-medium italic leading-relaxed max-w-4xl mx-auto">
+    <p className="text-lg md:text-xl text-zinc-200 font-medium italic leading-relaxed">
       “We define decision clarity. We don’t build pipelines. We bridge business goals and technical execution.”
     </p>
   </div>
 </section>
+
 
 
     </div>
