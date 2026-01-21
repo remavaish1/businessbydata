@@ -27,16 +27,19 @@ const Home: React.FC = () => {
       </section>
 
       {/* Distinction Section */}
-      <section className="py-10 md:py-12 border-y border-zinc-100 bg-zinc-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-sm font-medium uppercase tracking-[0.2em] text-zinc-400 mb-2">
-            Our Distinction
-          </p>
-          <p className="text-lg text-zinc-700 font-medium italic">
-            "We define decision clarity.We don’t build pipelines.We bridge business goals and technical execution.”
-          </p>
-        </div>
-      </section>
+     {/* Distinction Section */}
+<section className="py-10 md:py-12 mb-20 border-y border-zinc-100 bg-zinc-50">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <p className="text-sm font-medium uppercase tracking-[0.2em] text-zinc-400 mb-2">
+      Our Distinction
+    </p>
+    <p className="text-lg text-zinc-700 font-medium italic">
+      "We define decision clarity.We don’t build pipelines.We bridge business goals and technical execution.”
+    </p>
+  </div>
+</section>
+
+
     </div>
   );
 };
