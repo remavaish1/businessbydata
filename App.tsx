@@ -150,13 +150,25 @@ const Header: React.FC = () => {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 items-center">
           <div className="flex-shrink-0">
-            <Link to="/" className="flex items-center gap-3">
-              <img src="/logo_BBD.png" alt="Business By Data" className="h-7 w-auto" />
-              <span className="text-xl md:text-2xl font-bold tracking-tighter text-zinc-900 leading-none">
-                Business By Data<span className="text-zinc-400">.</span>
-              </span>
-            </Link>
-          </div>
+  <Link to="/" className="flex items-center gap-3">
+    <img
+      src="/logo_BBD.png"
+      alt="Business By Data"
+      className="h-7 w-auto"
+    />
+
+    <div className="flex flex-col leading-tight">
+      <span className="text-xl md:text-2xl font-bold tracking-tighter text-zinc-900">
+        Business By Data<span className="text-zinc-400">.</span>
+      </span>
+
+      <span className="text-[11px] md:text-xs text-zinc-500 tracking-wide">
+        Simplifying Data, Amplifying Actions
+      </span>
+    </div>
+  </Link>
+</div>
+
 
           {/* Desktop Nav */}
           <div className="hidden lg:flex space-x-10 items-center">
