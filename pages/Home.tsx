@@ -20,21 +20,20 @@ const Home: React.FC = () => {
               We help organizations understand, structure, and use data effectively. Get clear direction and
               measurement logic without building complex systems or hiring massive teams.
             </p>
-
-       
+    
           </div>
         </div>
       </section>
 
-      {/* Distinction Section */}
-     {/* Distinction Section */}
-<section className="py-10 md:py-12 mb-20 border-y border-zinc-100 bg-zinc-50">
+  
+{/* Distinction Section */}
+<section className="py-16 md:py-20 mb-20 bg-zinc-900">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    <p className="text-sm font-medium uppercase tracking-[0.2em] text-zinc-400 mb-2">
+    <p className="text-sm md:text-base font-semibold uppercase tracking-[0.25em] text-zinc-400 mb-4">
       Our Distinction
     </p>
-    <p className="text-lg text-zinc-700 font-medium italic">
-      "We define decision clarity.We don’t build pipelines.We bridge business goals and technical execution.”
+    <p className="text-xl md:text-2xl lg:text-3xl text-white font-medium italic leading-relaxed max-w-4xl mx-auto">
+      “We define decision clarity. We don’t build pipelines. We bridge business goals and technical execution.”
     </p>
   </div>
 </section>
