@@ -149,62 +149,60 @@ export const PROCESS_STEPS: ProcessStep[] = [
 /* =========================
    CASE STUDIES
 ========================= */
+
 export const CASE_STUDIES: CaseStudy[] = [
   {
-    
-  id: "retail-measurement",
-  title: "Data-Driven Allocation, Inventory & Master Data Modernisation",
-  industry: "Retail",
-  context:
-    "A multi-brand sportswear wholesale and retail operator managing 87 wholesale accounts and ~200 retail outlets with fragmented planning and low-trust product data.",
-  problem:
-    "Allocation and buying decisions were manual and inconsistent, while poor master data reduced trust in reporting and blocked ERP readiness—creating stock imbalances and tying up working capital.",
-  approach:
-    "Built a disciplined allocation + Open-to-Buy (OTB) model, standardized product master data for ERP readiness, and implemented decision dashboards to track performance across accounts and outlets.",
-  deliverables: [
-    "Allocation & OTB Model",
-    "Master Data Standards & Governance",
-    "Free-to-Sell (FTS) Framework",
-    "Multi-Season Article Master (8 seasons)",
-    "Power BI Decision Dashboards"
-  ],
-  outcomes: [
-    "Improved stock availability across accounts and outlets",
-    "Reduced excess and ageing inventory through FTS",
-    "ERP readiness enabled through clean master data",
-    "Repeatable planning logic replaced ad-hoc decisions",
-    "Leadership visibility into buying and allocation performance"
-  ],
-  tags: ["Retail", "Strategy"]
-}
-
-
-  
-{
-  id: "fmcg-decision-framework",
-  title: "FMCG Supply Chain Decision Framework",
-  industry: "FMCG",
-  context:
-    "A regional FMCG business struggling with forecast volatility, margin leakage, and inconsistent pricing decisions across markets.",
-  problem:
-    "Different markets and sales teams used different assumptions for demand, margins, and pricing. Forecasts changed monthly without clear drivers, low-margin SKUs went unnoticed, and leadership time was spent reconciling numbers instead of making decisions.",
-  approach:
-    "Established a single commercial logic for forecasting, margin, and pricing decisions. Standardized demand reviews, introduced structured profitability analysis, and shifted leadership discussions from reporting to decision-focused reviews.",
-  deliverables: [
-    "Unified Demand Forecasting Model (Actuals, Open Orders, YTG)",
-    "Margin & Profitability Diagnostic (Product, Category, Market)",
-    "Pricing Impact & Scenario Analysis Framework",
-    "Executive Performance Review Structure",
-    "Forecast Accuracy & Commercial KPIs"
-  ],
-  outcomes: [
-    "Improved forecast stability and leadership confidence",
-    "Early visibility of margin erosion and low-profit SKUs",
-    "Stronger pricing discipline across markets",
-    "Faster, clearer commercial decisions",
-    "One version of commercial truth across Sales, Finance, and Supply Chain"
-  ],
-  tags: ["FMCG", "Decision Support"]
-}
-
+    id: "retail-measurement",
+    title: "Data-Driven Allocation, Inventory & Master Data Modernisation",
+    industry: "Retail",
+    context:
+      "A multi-brand sportswear wholesale and retail operator managing 87 wholesale accounts and ~200 retail outlets with fragmented planning and low-trust product data.",
+    problem:
+      "Allocation and buying decisions were manual and inconsistent, while poor master data reduced trust in reporting and blocked ERP readiness—creating stock imbalances and tying up working capital.",
+    approach:
+      "Built a disciplined allocation + Open-to-Buy (OTB) model, standardized product master data for ERP readiness, and implemented decision dashboards to track performance across accounts and outlets.",
+    deliverables: [
+      "Allocation & OTB Model",
+      "Master Data Standards & Governance",
+      "Free-to-Sell (FTS) Framework",
+      "Multi-Season Article Master (8 seasons)",
+      "Power BI Decision Dashboards",
+    ],
+    outcomes: [
+      "Improved stock availability across accounts and outlets",
+      "Reduced excess and ageing inventory through FTS",
+      "ERP readiness enabled through clean master data",
+      "Repeatable planning logic replaced ad-hoc decisions",
+      "Leadership visibility into buying and allocation performance",
+    ],
+    tags: ["Retail", "Strategy"],
+  },
+  {
+    id: "fmcg-decision-framework",
+    title: "Standardising Demand, Margin & Pricing Decisions Across Markets",
+    industry: "FMCG",
+    context:
+      "A regional FMCG business struggling with forecast volatility, margin leakage, and inconsistent pricing decisions across markets.",
+    problem:
+      "Different markets and sales teams used different assumptions for demand, margins, and pricing. Forecasts changed monthly without clear drivers, low-margin SKUs went unnoticed, and leadership time was spent reconciling numbers instead of making decisions.",
+    approach:
+      "Established a single commercial logic for forecasting, margin, and pricing decisions. Standardized demand reviews, introduced structured profitability analysis, and shifted leadership discussions from reporting to decision-focused reviews.",
+    deliverables: [
+      "Unified Demand Forecasting Model (Actuals, Open Orders, YTG)",
+      "Margin & Profitability Diagnostic (Product, Category, Market)",
+      "Pricing Impact & Scenario Analysis Framework",
+      "Executive-ready Performance Review Structure",
+      "Forecast Accuracy & Performance Tracking KPIs",
+    ],
+    outcomes: [
+      "Improved forecast stability and confidence",
+      "Early visibility of margin erosion and low-profit SKUs",
+      "Stronger pricing discipline across markets",
+      "Faster, clearer leadership decisions",
+      "One version of commercial truth across Sales, Finance, and Supply Chain",
+    ],
+    tags: ["FMCG", "Decision Support"],
+  },
 ];
+
+
