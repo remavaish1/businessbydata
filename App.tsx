@@ -273,11 +273,7 @@ const Footer: React.FC = () => {
                   Founder
                 </Link>
               </li>
-              <li>
-                <Link to="/contact" className="text-sm text-zinc-500 hover:text-zinc-900">
-                  Contact
-                </Link>
-              </li>
+              
             </ul>
           </div>
 
