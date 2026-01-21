@@ -258,6 +258,12 @@ const Footer: React.FC = () => {
               Navigation
             </h3>
             <ul className="space-y-3">
+
+               <li>
+                <Link to="/home" className="text-sm text-zinc-500 hover:text-zinc-900">
+                  Home
+                </Link>
+              </li>
               <li>
                 <Link to="/services" className="text-sm text-zinc-500 hover:text-zinc-900">
                   Services
