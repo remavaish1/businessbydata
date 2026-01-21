@@ -152,12 +152,20 @@ export const PROCESS_STEPS: ProcessStep[] = [
 export const CASE_STUDIES: CaseStudy[] = [
   {
     id: "retail-measurement",
-    title: "Standardizing Retail Performance Measurement",
+    title: "Data-Driven Allocation, Inventory & Master Data Modernisation",
     industry: "Retail",
     context:
-      "A multi-store retailer struggling with inconsistent sales reporting across regions.",
+      "Turning Wholesale Sportswear Operations into Reliable, Scalable Decisions.",
     problem:
-      "Different managers used different definitions for key metrics, leading to leadership disputes.",
+      "Unstructured Planning: Lack of a standard allocation model or Open-to-Buy (OTB) process for wholesale and retail channels, leading to excess stock in some accounts and stockouts in others.
+
+      Data Quality Constraints: Dirty, inconsistent product data hindered trust in reporting and blocked accurate ERP integration.
+
+Legacy Inventory Inefficiencies: Older season and broken product models remained unmanaged, tying up working capital.
+
+Manual, Non-Scalable Process: Decisions were heavily manual and Excel-dependent, with no consolidated governance.
+
+Analytics Gap: Limited visibility into buying efficacy and allocation performance across accounts and outlets.",
     approach:
       "Defined a unified metric catalogue and audited POS data quality.",
     deliverables: [
@@ -170,26 +178,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     ],
     tags: ["Retail", "Strategy"],
   },
-  {
-    id: "banking-governance",
-    title: "Data Governance for Strategic Reporting",
-    industry: "Banking",
-    context:
-      "A mid-sized commercial bank undergoing digital transformation.",
-    problem:
-      "Dashboards built by technical teams did not align with leadership goals.",
-    approach:
-      "Translated executive requirements into clear technical documentation.",
-    deliverables: [
-      "Governance Model",
-      "Reporting Requirements Pack",
-    ],
-    outcomes: [
-      "Dashboards aligned with long-term growth goals",
-      "Clear execution by technical teams",
-    ],
-    tags: ["Banking", "Governance"],
-  },
+  
   {
     id: "fmcg-kpi",
     title: "FMCG Supply Chain Decision Framework",
