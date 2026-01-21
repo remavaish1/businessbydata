@@ -58,7 +58,7 @@ export const SERVICE_PILLARS = [
   },
   {
     id: "analytics-modelling",
-    title: "Practical Analytics, Advanced Excel Models & Power BI",
+    title: "Practical Analytics, Advanced Excel Models & Power BI Dashboards",
     whoItIsFor:
       "Teams that need usable models, dashboards, and automated reporting — especially where maturity is evolving or analysis is stuck in manual spreadsheets.",
     whatWeDeliver: [
