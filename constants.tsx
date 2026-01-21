@@ -17,104 +17,141 @@ export const LINKEDIN_PROFILE_URL = "https://www.linkedin.com/in/rema-vaish/";
 /* =========================
    SERVICES
 ========================= */
-export const SERVICE_PILLARS: ServicePillar[] = [
+export const SERVICE_PILLARS = [
   {
-    id: "decision-support",
-    title: "Decision Support & KPI Design",
+    id: "decision-kpi-design",
+    title: "Decision-Centric Measurement & KPI Design (Flagship)",
     whoItIsFor:
-      "CEOs and COOs who feel overwhelmed by noise and need clear indicators of business performance.",
+      "CEOs, COOs, and Heads of Ops/Commercial/Finance who want clarity on what to measure, why it matters, and what to do when performance shifts.",
     whatWeDeliver: [
-      "Custom KPI Catalogue",
-      "Metric Calculation Logic",
-      "Decision Review Frameworks",
+      "Decision-to-metric mapping (decisions, actions, owners)",
+      "Custom KPI catalogue with definitions, thresholds, and ownership",
+      "Metric calculation logic (clear, auditable rules)",
+      "Performance frameworks (S&OP, margin, growth, cost, service)",
+      "Scenario and what-if models for planning and trade-offs",
     ],
     outcomes: [
       "Alignment on what success looks like",
       "Clarity on performance drivers",
-      "Faster decision-making cycles",
+      "Faster decision cycles with less debate",
+      "KPIs that lead to action, not noise",
     ],
   },
   {
-    id: "measurement-foundations",
-    title: "Business Data Definition & Measurement Foundations",
+    id: "data-flows-readiness",
+    title: "Decision-Aligned Data Flows & Analytics Readiness",
     whoItIsFor:
-      "Finance and Ops leaders needing consistency in how business entities are defined across the organization.",
+      "Leaders and teams seeing mismatched numbers across CRM, ERP, POS, finance, and digital tools, and need to establish what’s reliable and why.",
     whatWeDeliver: [
-      "Data Dictionary",
-      "Entity Definitions",
-      "Field Mapping Requirements",
+      "Current-state data flow mapping (CRM → ERP → digital → reporting)",
+      "Source-of-truth assessment for priority metrics",
+      "Gap analysis (missing fields, breakpoints, delays, duplicates)",
+      "Minimum viable data requirements for decision-grade reporting",
+      "Recommendations for fixes (without owning engineering delivery)",
     ],
     outcomes: [
-      "Single source of truth for metrics",
-      "Elimination of reporting discrepancies",
-      "Ready-to-implement technical specs",
+      "Reduced reporting discrepancies",
+      "Clear traceability of numbers end-to-end",
+      "Fewer manual reconciliations",
+      "A practical plan to make data decision-ready",
     ],
   },
   {
-    id: "diagnostics",
-    title: "Data Diagnostics & Assessments",
+    id: "analytics-modelling",
+    title: "Practical Analytics, Advanced Excel Models & Power BI",
     whoItIsFor:
-      "Organizations with existing reporting that doesn't feel right or lacks trust from leadership.",
+      "Teams that need usable models, dashboards, and automated reporting — especially where maturity is evolving or analysis is stuck in manual spreadsheets.",
     whatWeDeliver: [
-      "Data Quality Audit",
-      "Dashboard Utility Review",
-      "Maturity Roadmap",
+      "Advanced Excel models (forecasting, pricing, inventory, OTB, P&L logic)",
+      "Power BI dashboards designed for decision-making",
+      "Automated reporting packs (weekly/monthly performance)",
+      "Exception reporting and alert logic",
+      "Rapid analytics solutions for low-maturity environments",
     ],
     outcomes: [
-      "Identification of data gaps",
-      "Restored trust in reporting",
-      "Clear path to improvement",
+      "Faster insights with less manual effort",
+      "Decision-ready dashboards and performance packs",
+      "Better planning accuracy and control",
+      "Improved productivity through automation",
     ],
   },
   {
     id: "analytics-strategy",
-    title: "Analytics Strategy & Roadmapping",
+    title: "Analytics Strategy & Business Roadmapping",
     whoItIsFor:
-      "SME founders and leadership teams planning for growth and needing a data plan that scales.",
+      "Leadership teams who want to prioritise analytics initiatives based on business value and define what to build next — without vendor bias.",
     whatWeDeliver: [
-      "3-Phase Data Strategy",
-      "Tooling Recommendations (Business Focus)",
-      "Priority Matrix",
+      "Analytics roadmap aligned to business goals",
+      "Use case prioritisation by value and feasibility",
+      "Reporting and measurement operating model recommendations",
+      "Tool-fit assessment (BI, ERP, CRM) from a business lens",
+      "90-day and 6-month execution plan (business-owned)",
     ],
     outcomes: [
-      "Strategic clarity",
-      "Avoidance of expensive technical debt",
-      "Sequential ROI-focused execution",
+      "A clear, sequenced analytics roadmap",
+      "Reduced wasted effort on low-value reporting",
+      "Improved alignment between business and tech teams",
+      "Faster time-to-value for analytics investments",
     ],
   },
   {
-    id: "governance",
-    title: "Governance, Standards & Data Discipline",
+    id: "definitions-foundations",
+    title: "Data Readiness, Definitions & Measurement Foundations",
     whoItIsFor:
-      "Heads of operations and finance who want to ensure data quality is maintained by teams.",
+      "Finance, ops, and analytics teams that need consistent definitions for entities, hierarchies, and metrics — without heavy governance bureaucracy.",
     whatWeDeliver: [
-      "Governance Policy Manual",
-      "Data Stewardship Roles",
-      "Input Standard Procedures",
+      "KPI glossary and metric definitions",
+      "Entity and hierarchy definitions (products, customers, channels, locations)",
+      "Key field mapping requirements for reporting",
+      "Data quality rules tied to business meaning",
+      "Documentation that supports consistent reporting at scale",
     ],
     outcomes: [
-      "Sustainable data quality",
-      "Clear accountability",
-      "Reduced manual data cleanup",
+      "Single version of metric definitions",
+      "Less ambiguity and fewer “number wars”",
+      "Cleaner requirements for implementation teams",
+      "Faster onboarding for analysts and managers",
     ],
   },
   {
-    id: "fractional-leadership",
-    title: "Fractional Advisory & Leadership Support",
+    id: "decision-rhythm",
+    title: "Decision Operating Rhythm & Performance Cadence",
     whoItIsFor:
-      "High-growth companies needing senior data direction without the cost of a full-time Head of Data.",
+      "Leadership teams who have reports but lack a consistent rhythm to review performance, assign actions, and follow through (weekly/monthly/S&OP/QBR).",
     whatWeDeliver: [
-      "Ongoing Strategic Guidance",
-      "Implementation Oversight",
-      "Technical Team Liaison",
+      "Performance review cadence design (weekly, monthly, S&OP, QBR)",
+      "Decision forums and pack structure (what gets reviewed, when, by whom)",
+      "Escalation and exception logic for KPI movements",
+      "Accountability loops (owners, actions, timelines)",
+      "Operational playbooks for performance management",
     ],
     outcomes: [
-      "Executive-level data advocacy",
-      "Correct technical execution by partners",
-      "Consistent data strategy adherence",
+      "Decisions translate into execution",
+      "Clear ownership and follow-through",
+      "Reduced firefighting through early visibility",
+      "Stronger performance culture and discipline",
     ],
   },
-];
+  {
+    id: "training-enablement",
+    title: "Capability Building: Analytics, Excel, AI & Business Enablement",
+    whoItIsFor:
+      "Business teams who need practical skills in analysis, product thinking, reporting, and AI literacy — designed for managers and decision-makers.",
+    whatWeDeliver: [
+      "Excel training (business modelling, scenario analysis, controls)",
+      "Business analysis training (problem framing, requirements, decision logic)",
+      "Product thinking for business teams (prioritisation, outcomes vs outputs)",
+      "Data literacy programs (how to interpret and challenge numbers)",
+      "AI literacy programs (use cases, value, risks, adoption)",
+    ],
+    outcomes: [
+      "Better decisions from business teams",
+      "Stronger analytics adoption and usage",
+      "Reduced dependence on a few ‘Excel heroes’",
+      "More credible, consistent reporting culture",
+    ],
+  },
+] as const;
 
 /* =========================
    PROCESS
