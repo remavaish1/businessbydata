@@ -151,33 +151,34 @@ export const PROCESS_STEPS: ProcessStep[] = [
 ========================= */
 export const CASE_STUDIES: CaseStudy[] = [
   {
-    id: "retail-measurement",
-    title: "Data-Driven Allocation, Inventory & Master Data Modernisation",
-    industry: "Retail",
-    context:
-      "Turning Wholesale Sportswear Operations into Reliable, Scalable Decisions.",
-    problem:
-      "Unstructured Planning: Lack of a standard allocation model or Open-to-Buy (OTB) process for wholesale and retail channels, leading to excess stock in some accounts and stockouts in others.
+    
+  id: "retail-measurement",
+  title: "Data-Driven Allocation, Inventory & Master Data Modernisation",
+  industry: "Retail",
+  context:
+    "A multi-brand sportswear wholesale and retail operator managing 87 wholesale accounts and ~200 retail outlets with fragmented planning and low-trust product data.",
+  problem:
+    "Allocation and buying decisions were manual and inconsistent, while poor master data reduced trust in reporting and blocked ERP readiness—creating stock imbalances and tying up working capital.",
+  approach:
+    "Built a disciplined allocation + Open-to-Buy (OTB) model, standardized product master data for ERP readiness, and implemented decision dashboards to track performance across accounts and outlets.",
+  deliverables: [
+    "Allocation & OTB Model",
+    "Master Data Standards & Governance",
+    "Free-to-Sell (FTS) Framework",
+    "Multi-Season Article Master (8 seasons)",
+    "Power BI Decision Dashboards"
+  ],
+  outcomes: [
+    "Improved stock availability across accounts and outlets",
+    "Reduced excess and ageing inventory through FTS",
+    "ERP readiness enabled through clean master data",
+    "Repeatable planning logic replaced ad-hoc decisions",
+    "Leadership visibility into buying and allocation performance"
+  ],
+  tags: ["Retail", "Strategy"]
+}
 
-      Data Quality Constraints: Dirty, inconsistent product data hindered trust in reporting and blocked accurate ERP integration.
 
-Legacy Inventory Inefficiencies: Older season and broken product models remained unmanaged, tying up working capital.
-
-Manual, Non-Scalable Process: Decisions were heavily manual and Excel-dependent, with no consolidated governance.
-
-Analytics Gap: Limited visibility into buying efficacy and allocation performance across accounts and outlets.",
-    approach:
-      "Defined a unified metric catalogue and audited POS data quality.",
-    deliverables: [
-      "KPI Catalogue",
-      "Standard Operating Procedures for Data Entry",
-    ],
-    outcomes: [
-      "100% agreement on regional performance",
-      "15% reduction in weekly reporting effort",
-    ],
-    tags: ["Retail", "Strategy"],
-  },
   
   {
     id: "fmcg-kpi",
