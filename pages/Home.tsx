@@ -21,14 +21,7 @@ const Home: React.FC = () => {
               measurement logic without building complex systems or hiring massive teams.
             </p>
 
-            <div className="mt-10">
-              <Link
-                to={DISCOVERY_CALL_LINK}
-                className="inline-flex items-center bg-zinc-900 text-white px-8 py-4 text-base font-medium rounded-sm hover:bg-zinc-800 transition-all"
-              >
-                {PRIMARY_CTA_TEXT}
-              </Link>
-            </div>
+       
           </div>
         </div>
       </section>
