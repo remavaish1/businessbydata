@@ -26,7 +26,7 @@ const EMAIL = "connect@businessbydata.co";
 // Use E.164 without "+" for WhatsApp wa.me links (e.g., 2348012345678)
 const PHONE_E164_NO_PLUS = "+234 9116281642";
 // For display (e.g., +234 801 234 5678)
-const PHONE_DISPLAY = "+234 XXXXXXXXXX";
+const PHONE_DISPLAY = "+234 9116281642";
 
 const LINKEDIN_URL = "https://www.linkedin.com/in/rema-vaish/";
 const INSTAGRAM_URL = "https://www.instagram.com/businessbydata.rema/";
