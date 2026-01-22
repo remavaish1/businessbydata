@@ -260,7 +260,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
 
                <li>
-                <Link to="/home" className="text-sm text-zinc-500 hover:text-zinc-900">
+                <Link to="/" className="text-sm text-zinc-500 hover:text-zinc-900">
                   Home
                 </Link>
               </li>
