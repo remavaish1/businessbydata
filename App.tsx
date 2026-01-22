@@ -302,22 +302,24 @@ const Footer: React.FC = () => {
 
               {/* Phone */}
              <a
+<a
   href={`tel:${PHONE_E164}`}
   className="flex items-center gap-3 hover:text-zinc-900 transition-colors"
 >
   <IconPhone className="w-4 h-4 text-zinc-400" />
-  {PHONE_E164}
+  Call Us
 </a>
 
               {/* WhatsApp (same number) */}
               <a
+  <a
   href={`https://wa.me/${PHONE_WA_DIGITS}?text=${encodeURIComponent(WHATSAPP_PREFILL)}`}
   target="_blank"
   rel="noopener noreferrer"
   className="flex items-center gap-3 hover:text-zinc-900 transition-colors"
 >
   <IconChat className="w-4 h-4 text-zinc-400" />
-  WhatsApp: {PHONE_E164}
+  WhatsApp
 </a>
 
               {/* LinkedIn */}
