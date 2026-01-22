@@ -193,7 +193,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     title: "Data-Driven Allocation, Inventory & Master Data Modernisation",
     industry: "Retail",
     context:
-      "A multi-brand sportswear wholesale and retail operator managing 87 wholesale accounts and ~200 retail outlets with fragmented planning and low-trust product data.",
+      "A multi-brand sportswear wholesale and retail operator managing "X" wholesale accounts and "Y" retail outlets with fragmented planning and low-trust product data.",
     problem:
       "Allocation and buying decisions were manual and inconsistent, while poor master data reduced trust in reporting and blocked ERP readiness—creating stock imbalances and tying up working capital.",
     approach:
