@@ -24,9 +24,9 @@ import { PRIMARY_CTA_TEXT, DISCOVERY_CALL_LINK } from "./constants";
 const EMAIL = "connect@businessbydata.co";
 
 // Use E.164 without "+" for WhatsApp wa.me links (e.g., 2348012345678)
-const PHONE_E164_NO_PLUS = "2349116281642";
+const PHONE_E164  = "2349116281642";
 // For display (e.g., +234 801 234 5678)
-const PHONE_DISPLAY = "+234 9116281642";
+const PHONE_DISPLAY = "+2349116281642";
 
 const LINKEDIN_URL = "https://www.linkedin.com/in/rema-vaish/";
 const INSTAGRAM_URL = "https://www.instagram.com/businessbydata.rema/";
@@ -301,24 +301,24 @@ const Footer: React.FC = () => {
               </a>
 
               {/* Phone */}
-              <a
-                href={`tel:${PHONE_DISPLAY.replace(/\s/g, "")}`}
-                className="flex items-center gap-3 hover:text-zinc-900 transition-colors"
-              >
-                <IconPhone className="w-4 h-4 text-zinc-400" />
-                {PHONE_DISPLAY}
-              </a>
+             <a
+  href={`tel:${PHONE_E164}`}
+  className="flex items-center gap-3 hover:text-zinc-900 transition-colors"
+>
+  <IconPhone className="w-4 h-4 text-zinc-400" />
+  {PHONE_E164}
+</a>
 
               {/* WhatsApp (same number) */}
               <a
-                href={`https://wa.me/${PHONE_E164_NO_PLUS}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3 hover:text-zinc-900 transition-colors"
-              >
-                <IconChat className="w-4 h-4 text-zinc-400" />
-                WhatsApp
-              </a>
+  href={`https://wa.me/${PHONE_WA_DIGITS}?text=${encodeURIComponent(WHATSAPP_PREFILL)}`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-3 hover:text-zinc-900 transition-colors"
+>
+  <IconChat className="w-4 h-4 text-zinc-400" />
+  WhatsApp: {PHONE_E164}
+</a>
 
               {/* LinkedIn */}
               <a
