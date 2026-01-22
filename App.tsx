@@ -24,7 +24,7 @@ import { PRIMARY_CTA_TEXT, DISCOVERY_CALL_LINK } from "./constants";
 const EMAIL = "connect@businessbydata.co";
 
 // Use E.164 without "+" for WhatsApp wa.me links (e.g., 2348012345678)
-const PHONE_E164_NO_PLUS = "+234 9116281642";
+const PHONE_E164_NO_PLUS = "2349116281642";
 // For display (e.g., +234 801 234 5678)
 const PHONE_DISPLAY = "+234 9116281642";
 
