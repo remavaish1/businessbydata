@@ -33,7 +33,7 @@ export const SERVICE_PILLARS: ServicePillar[] = [
     ],
     outcomes: [
       "Single source of metric truth across the organization",
-      "Clarity on performance drivers—what actually moves the needle",
+      "Clarity on performance drivers - what actually moves the needle",
       "Faster, less contentious decision cycles",
       "KPIs that lead to action, not noise",
       'Fewer "number wars" and cleaner accountability',
@@ -43,9 +43,9 @@ export const SERVICE_PILLARS: ServicePillar[] = [
     id: "trusted-numbers-blueprint",
     title: "Trusted Numbers Blueprint",
     whoItIsFor:
-      "Leaders seeing mismatched numbers across CRM, ERP, POS, and Finance—who need a trusted source of truth and end-to-end traceability.",
+      "Leaders seeing mismatched numbers across CRM, ERP, POS, and Finance who need a trusted source of truth and end-to-end traceability.",
     whatWeDeliver: [
-      "Current-state data flow mapping (CRM → ERP → digital → reporting)",
+      "Current-state data flow mapping (CRM to ERP to digital to reporting)",
       "Source-of-truth assessment for priority metrics",
       "Field mapping and data specs per KPI",
       "Gap analysis (missing fields, breakpoints, delays, duplicates)",
@@ -54,7 +54,7 @@ export const SERVICE_PILLARS: ServicePillar[] = [
     ],
     outcomes: [
       "Reduced reporting discrepancies and manual reconciliations",
-      "End-to-end traceability—every number has a clear source",
+      "End-to-end traceability - every number has a clear source",
       "Faster time-to-insight from sources to dashboards",
       "Single version of truth across teams and systems",
       "Clear, actionable roadmap to fix data gaps",
@@ -62,9 +62,9 @@ export const SERVICE_PILLARS: ServicePillar[] = [
   },
   {
     id: "analytics-modelling",
-    title: "Practical Analytics, Advanced Excel Models & Power BI Dashboards",
+    title: "Practical Analytics, Advanced Excel Models and Power BI Dashboards",
     whoItIsFor:
-      "Teams that need usable models, dashboards, and automated reporting — especially where maturity is evolving or analysis is stuck in manual spreadsheets.",
+      "Teams that need usable models, dashboards, and automated reporting, especially where maturity is evolving or analysis is stuck in manual spreadsheets.",
     whatWeDeliver: [
       "Advanced Excel models (forecasting, pricing, inventory, OTB, P&L logic)",
       "Power BI dashboards designed for decision-making",
@@ -83,9 +83,9 @@ export const SERVICE_PILLARS: ServicePillar[] = [
     id: "analytics-roi-roadmap",
     title: "Analytics ROI Roadmap",
     whoItIsFor:
-      "Leadership teams and PMO who want to prioritise analytics initiatives/investments based on business value and define what to build next — without vendor bias or tool hype.",
+      "Leadership teams and PMO who want to prioritise analytics initiatives and investments based on business value and define what to build next, without vendor bias or tool hype.",
     whatWeDeliver: [
-      "Business-aligned analytics roadmap (commercial + operational goals ranked by value)",
+      "Business-aligned analytics roadmap (commercial and operational goals ranked by value)",
       "Use-case prioritization matrix (value, feasibility, time-to-impact)",
       "Reporting and measurement operating model recommendations",
       "Tool-fit assessment (BI, ERP, CRM) from a business lens",
@@ -101,9 +101,9 @@ export const SERVICE_PILLARS: ServicePillar[] = [
   },
   {
     id: "dashboards-models",
-    title: "Decision Dashboards & Models",
+    title: "Decision Dashboards and Models",
     whoItIsFor:
-      "Functional teams (Sales, Ops, Supply Chain, Finance) who need usable, action-ready dashboards and advanced models—especially where analysis is stuck in spreadsheets.",
+      "Functional teams (Sales, Ops, Supply Chain, Finance) who need usable, action-ready dashboards and advanced models, especially where analysis is stuck in spreadsheets.",
     whatWeDeliver: [
       "Power BI dashboards designed for decisions (not just visuals)",
       "Advanced Excel models (forecasting, pricing, inventory, P&L, OTB)",
@@ -121,7 +121,7 @@ export const SERVICE_PILLARS: ServicePillar[] = [
   },
   {
     id: "performance-rhythm",
-    title: "Decision Operating Rhythm & Performance Cadence",
+    title: "Decision Operating Rhythm and Performance Cadence",
     whoItIsFor:
       "Leadership teams who have reports but lack a consistent rhythm to review performance, assign actions, and follow through (weekly/monthly/S&OP/QBR).",
     whatWeDeliver: [
@@ -132,16 +132,16 @@ export const SERVICE_PILLARS: ServicePillar[] = [
       "Facilitation support and change management for adoption",
     ],
     outcomes: [
-      "Decisions translate into execution—not just discussion",
+      "Decisions translate into execution, not just discussion",
       "Clear ownership and follow-through on action items",
       "Early visibility into issues (reduces firefighting)",
-      "Meetings that matter—focused, efficient, decisive",
+      "Meetings that matter - focused, efficient, decisive",
       "Stronger performance culture and accountability",
     ],
   },
   {
     id: "team-enablement",
-    title: "Team Enablement: Excel, BI & AI",
+    title: "Team Enablement: Excel, BI and AI",
     whoItIsFor:
       "Managers and decision-makers who need practical skills in analysis, Excel modeling, BI storytelling, and AI literacy.",
     whatWeDeliver: [
@@ -197,17 +197,17 @@ export const PROCESS_STEPS: ProcessStep[] = [
 export const CASE_STUDIES: CaseStudy[] = [
   {
     id: "retail-measurement",
-    title: "Data-Driven Allocation, Inventory & Master Data Modernisation",
+    title: "Data-Driven Allocation, Inventory and Master Data Modernisation",
     industry: "Retail",
     context:
       'A multi-brand sportswear wholesale and retail operator managing "X" wholesale accounts and "Y" retail outlets with fragmented planning and low-trust product data.',
     problem:
-      "Allocation and buying decisions were manual and inconsistent, while poor master data reduced trust in reporting and blocked ERP readiness—creating stock imbalances and tying up working capital.",
+      "Allocation and buying decisions were manual and inconsistent, while poor master data reduced trust in reporting and blocked ERP readiness, creating stock imbalances and tying up working capital.",
     approach:
-      "Built a disciplined allocation + Open-to-Buy (OTB) model, standardized product master data for ERP readiness, and implemented decision dashboards to track performance across accounts and outlets.",
+      "Built a disciplined allocation plus Open-to-Buy (OTB) model, standardized product master data for ERP readiness, and implemented decision dashboards to track performance across accounts and outlets.",
     deliverables: [
-      "Allocation & OTB Model",
-      "Master Data Standards & Governance",
+      "Allocation and OTB Model",
+      "Master Data Standards and Governance",
       "Free-to-Sell (FTS) Framework",
       "Multi-Season Article Master (8 seasons)",
       "Power BI Decision Dashboards",
@@ -223,7 +223,7 @@ export const CASE_STUDIES: CaseStudy[] = [
   },
   {
     id: "fmcg-decision-framework",
-    title: "Standardising Demand, Margin & Pricing Decisions Across Markets",
+    title: "Standardising Demand, Margin and Pricing Decisions Across Markets",
     industry: "FMCG",
     context:
       "A regional FMCG business struggling with forecast volatility, margin leakage, and inconsistent pricing decisions across markets.",
@@ -233,10 +233,10 @@ export const CASE_STUDIES: CaseStudy[] = [
       "Established a single commercial logic for forecasting, margin, and pricing decisions. Standardized demand reviews, introduced structured profitability analysis, and shifted leadership discussions from reporting to decision-focused reviews.",
     deliverables: [
       "Unified Demand Forecasting Model (Actuals, Open Orders, YTG)",
-      "Margin & Profitability Diagnostic (Product, Category, Market)",
-      "Pricing Impact & Scenario Analysis Framework",
+      "Margin and Profitability Diagnostic (Product, Category, Market)",
+      "Pricing Impact and Scenario Analysis Framework",
       "Executive-ready Performance Review Structure",
-      "Forecast Accuracy & Performance Tracking KPIs",
+      "Forecast Accuracy and Performance Tracking KPIs",
     ],
     outcomes: [
       "Improved forecast stability and confidence",
