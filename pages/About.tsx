@@ -18,9 +18,9 @@ const About: React.FC = () => {
                 Rema Vaish
               </h1>
 
-              {/* Updated summary content (bigger, consistent tone) */}
+              {/* Updated summary content (reduced by 1 step + justified) */}
               <div className="space-y-6">
-                <p className="text-lg md:text-xl text-zinc-700 leading-relaxed text-pretty">
+                <p className="text-base md:text-lg text-zinc-700 leading-relaxed text-justify">
                   <span className="font-semibold text-zinc-900">Rema Vaish</span> helps mid-market organisations turn
                   fragmented, spreadsheet-heavy data into decision-ready systems that improve revenue, margins and
                   operational stability. With <span className="font-semibold text-zinc-900">13+ years</span> across
@@ -30,7 +30,7 @@ const About: React.FC = () => {
                   <span className="font-semibold text-zinc-900">structured performance management</span>.
                 </p>
 
-                <p className="text-lg md:text-xl text-zinc-700 leading-relaxed text-pretty">
+                <p className="text-base md:text-lg text-zinc-700 leading-relaxed text-justify">
                   Her work has spanned <span className="font-semibold text-zinc-900">Symrise Middle East</span>,{" "}
                   <span className="font-semibold text-zinc-900">DAMAC Properties</span>,{" "}
                   <span className="font-semibold text-zinc-900">Nike</span>,{" "}
@@ -42,16 +42,18 @@ const About: React.FC = () => {
                   month-end close, improved sales conversion and more accurate demand forecasting.
                 </p>
 
-                <p className="text-lg md:text-xl text-zinc-700 leading-relaxed text-pretty">
+                <p className="text-base md:text-lg text-zinc-700 leading-relaxed text-justify">
                   Rema bridges executive ambitions with technical realities. She understands that for most organisations,
                   the bottleneck isn&apos;t tools—it&apos;s{" "}
-                  <span className="font-semibold text-zinc-900 italic">definition, logic and measurement discipline</span>.
-                  She engages as an executive partner: focused discovery, pragmatic roadmap, quick wins within months.
+                  <span className="font-semibold text-zinc-900 italic">
+                    definition, logic and measurement discipline
+                  </span>
+                  . She engages as an executive partner: focused discovery, pragmatic roadmap, quick wins within months.
                   Her approach ensures implementation teams build correctly the first time and that analytics remains
                   trusted, adopted and used at the cadence the business runs.
                 </p>
 
-                <p className="text-lg md:text-xl text-zinc-700 leading-relaxed text-pretty">
+                <p className="text-base md:text-lg text-zinc-700 leading-relaxed text-justify">
                   She holds an <span className="font-semibold text-zinc-900">MBA</span> from{" "}
                   <span className="font-semibold text-zinc-900">SP Jain School of Global Management (Dubai)</span>,
                   completed an <span className="font-semibold text-zinc-900">IIT Bombay</span> apprenticeship, and earned
@@ -59,17 +61,22 @@ const About: React.FC = () => {
                 </p>
               </div>
 
-              {/* Two icon rows (kept, slightly larger) */}
+              {/* Two icon rows (kept, one step smaller + justified body) */}
               <div className="mt-12 space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="p-3 bg-zinc-50 rounded-sm border border-zinc-100">
                     <svg className="h-6 w-6 text-zinc-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={1.5}
+                        d="M13 10V3L4 14h7v7l9-11h-7z"
+                      />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-zinc-900">13+ Years Experience</h4>
-                    <p className="text-base text-zinc-600 leading-relaxed">
+                    <h4 className="text-base font-semibold text-zinc-900">13+ Years Experience</h4>
+                    <p className="text-sm text-zinc-600 leading-relaxed text-justify">
                       Expertise in decision support, governance, and fractional leadership across multiple industries.
                     </p>
                   </div>
@@ -78,12 +85,17 @@ const About: React.FC = () => {
                 <div className="flex items-start gap-4">
                   <div className="p-3 bg-zinc-50 rounded-sm border border-zinc-100">
                     <svg className="h-6 w-6 text-zinc-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={1.5}
+                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                      />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-zinc-900">Liaison-First Approach</h4>
-                    <p className="text-base text-zinc-600 leading-relaxed">
+                    <h4 className="text-base font-semibold text-zinc-900">Liaison-First Approach</h4>
+                    <p className="text-sm text-zinc-600 leading-relaxed text-justify">
                       A proven ability to act as the executive voice within technical data projects.
                     </p>
                   </div>
@@ -113,7 +125,7 @@ const About: React.FC = () => {
               </div>
 
               <div className="absolute -bottom-10 -left-10 p-10 bg-white shadow-xl border border-zinc-50 rounded-sm hidden md:block max-w-[320px]">
-                <p className="text-zinc-900 font-semibold text-lg italic leading-relaxed">
+                <p className="text-zinc-900 font-medium text-base italic leading-relaxed text-justify">
                   "Strategy without measurement logic is just a wish list."
                 </p>
                 <p className="mt-4 text-zinc-400 text-xs font-bold uppercase tracking-widest">— REMA VAISH</p>
@@ -123,7 +135,7 @@ const About: React.FC = () => {
         </div>
       </section>
 
-      {/* How I Work (kept as you already have; leave as-is or restyle later for full consistency) */}
+      {/* How I Work (kept; body reduced by one step + justified) */}
       <section className="py-24 bg-zinc-50 border-y border-zinc-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold tracking-tight text-zinc-900 mb-12">How I Work</h2>
@@ -132,7 +144,7 @@ const About: React.FC = () => {
               <div className="text-zinc-300 font-bold text-4xl mt-1">01</div>
               <div>
                 <h3 className="text-xl font-bold text-zinc-900 mb-2">The Strategic Translation</h3>
-                <p className="text-zinc-600 text-lg leading-relaxed">
+                <p className="text-zinc-600 text-base leading-relaxed text-justify">
                   I translate high-level business goals into specific data points and measurement logic. If you want to
                   increase profit, I define exactly which fields, at which frequency, and via which calculation that
                   goal will be tracked.
@@ -144,7 +156,7 @@ const About: React.FC = () => {
               <div className="text-zinc-300 font-bold text-4xl mt-1">02</div>
               <div>
                 <h3 className="text-xl font-bold text-zinc-900 mb-2">The Tactical Handover</h3>
-                <p className="text-zinc-600 text-lg leading-relaxed">
+                <p className="text-zinc-600 text-base leading-relaxed text-justify">
                   I don’t just leave you with ideas. I produce the technical requirements that your engineers or
                   third-party vendors need to build accurate reports. I minimize the risk of misinterpretation between
                   management and tech.
@@ -156,7 +168,7 @@ const About: React.FC = () => {
               <div className="text-zinc-300 font-bold text-4xl mt-1">03</div>
               <div>
                 <h3 className="text-xl font-bold text-zinc-900 mb-2">Operational Embedding</h3>
-                <p className="text-zinc-600 text-lg leading-relaxed">
+                <p className="text-zinc-600 text-base leading-relaxed text-justify">
                   Reports are useless if not used. I work with you to integrate these metrics into your weekly or
                   monthly decision cycles, ensuring the data actually drives action.
                 </p>
