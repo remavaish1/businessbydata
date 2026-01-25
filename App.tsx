@@ -1,9 +1,3 @@
-// App.tsx (updated end-to-end)
-// - Fixes icon mismatch by using a consistent outline icon style for ALL footer links
-// - Adds Instagram + Phone + WhatsApp (same number)
-// - Keeps your existing structure intact (no behavioural changes to routing/navigation)
-// - Replace PHONE_E164 + PHONE_DISPLAY once and you're done
-
 import React, { useState, useEffect } from "react";
 import {
   HashRouter as Router,
@@ -18,18 +12,22 @@ import Services from "./pages/Services";
 import Portfolio from "./pages/Portfolio";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import { PRIMARY_CTA_TEXT, DISCOVERY_CALL_LINK } from "./constants";
 
 // ====== CONFIG (Update these once) ======
 const EMAIL = "connect@businessbydata.co";
 
-// Use E.164 without "+" for WhatsApp wa.me links (e.g., 2348012345678)
-const PHONE_E164  = "2349116281642";
-// For display (e.g., +234 801 234 5678)
-const PHONE_DISPLAY = "+2349116281642";
+// For tel: links. Include "+" for tel: to be safe across devices.
+const PHONE_E164 = "+2349116281642";
+
+// For display (if you decide to show the number)
+const PHONE_DISPLAY = "+234 911 628 1642";
 
 const LINKEDIN_URL = "https://www.linkedin.com/in/rema-vaish/";
 const INSTAGRAM_URL = "https://www.instagram.com/businessbydata.rema/";
+
+// WhatsApp requires digits only (no +)
+const PHONE_WA_DIGITS = PHONE_E164.replace(/\D/g, "");
+const WHATSAPP_PREFILL = "Hello, I would like to enquire about your services.";
 
 // ====== Simple Outline Icons (consistent style) ======
 const IconMail = ({ className = "w-4 h-4" }: { className?: string }) => (
@@ -150,25 +148,20 @@ const Header: React.FC = () => {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 items-center">
           <div className="flex-shrink-0">
-  <Link to="/" className="flex items-center gap-3">
-    <img
-      src="/logo_BBD.png"
-      alt="Business By Data"
-      className="h-7 w-auto"
-    />
+            <Link to="/" className="flex items-center gap-3">
+              <img src="/logo_BBD.png" alt="Business By Data" className="h-7 w-auto" />
 
-    <div className="flex flex-col leading-tight">
-      <span className="text-xl md:text-2xl font-bold tracking-tighter text-zinc-900">
-        Business By Data<span className="text-zinc-400">.</span>
-      </span>
+              <div className="flex flex-col leading-tight">
+                <span className="text-xl md:text-2xl font-bold tracking-tighter text-zinc-900">
+                  Business By Data<span className="text-zinc-400">.</span>
+                </span>
 
-      <span className="text-[11px] md:text-xs text-zinc-500 tracking-wide">
-        Simplifying Data, Amplifying Actions
-      </span>
-    </div>
-  </Link>
-</div>
-
+                <span className="text-[11px] md:text-xs text-zinc-500 tracking-wide">
+                  Simplifying Data, Amplifying Actions
+                </span>
+              </div>
+            </Link>
+          </div>
 
           {/* Desktop Nav */}
           <div className="hidden lg:flex space-x-10 items-center">
@@ -196,19 +189,9 @@ const Header: React.FC = () => {
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 {isOpen ? (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1.5}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 18L18 6M6 6l12 12" />
                 ) : (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1.5}
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 6h16M4 12h16M4 18h16" />
                 )}
               </svg>
             </button>
@@ -258,8 +241,7 @@ const Footer: React.FC = () => {
               Navigation
             </h3>
             <ul className="space-y-3">
-
-               <li>
+              <li>
                 <Link to="/" className="text-sm text-zinc-500 hover:text-zinc-900">
                   Home
                 </Link>
@@ -279,7 +261,6 @@ const Footer: React.FC = () => {
                   Founder
                 </Link>
               </li>
-              
             </ul>
           </div>
 
@@ -289,7 +270,7 @@ const Footer: React.FC = () => {
             </h3>
             <p className="text-sm text-zinc-500">Lagos, Nigeria</p>
 
-            {/* Contact Links (consistent icon style) */}
+            {/* Contact Links */}
             <div className="mt-4 space-y-3 text-sm text-zinc-500">
               {/* Email */}
               <a
@@ -301,26 +282,24 @@ const Footer: React.FC = () => {
               </a>
 
               {/* Phone */}
-             
-<a
-  href={`tel:${PHONE_E164}`}
-  className="flex items-center gap-3 hover:text-zinc-900 transition-colors"
->
-  <IconPhone className="w-4 h-4 text-zinc-400" />
-  Call Us
-</a>
-
-              {/* WhatsApp (same number) */}
               <a
-  <a
-  href={`https://wa.me/${PHONE_WA_DIGITS}?text=${encodeURIComponent(WHATSAPP_PREFILL)}`}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="flex items-center gap-3 hover:text-zinc-900 transition-colors"
->
-  <IconChat className="w-4 h-4 text-zinc-400" />
-  WhatsApp
-</a>
+                href={`tel:${PHONE_E164}`}
+                className="flex items-center gap-3 hover:text-zinc-900 transition-colors"
+              >
+                <IconPhone className="w-4 h-4 text-zinc-400" />
+                Call Us
+              </a>
+
+              {/* WhatsApp */}
+              <a
+                href={`https://wa.me/${PHONE_WA_DIGITS}?text=${encodeURIComponent(WHATSAPP_PREFILL)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 hover:text-zinc-900 transition-colors"
+              >
+                <IconChat className="w-4 h-4 text-zinc-400" />
+                WhatsApp
+              </a>
 
               {/* LinkedIn */}
               <a
@@ -376,7 +355,8 @@ const App: React.FC = () => {
             <Route path="/services" element={<Services />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/about" element={<About />} />
-            
+            {/* If/when you want Contact route back, uncomment: */}
+            {/* <Route path="/contact" element={<Contact />} /> */}
           </Routes>
         </main>
         <Footer />
