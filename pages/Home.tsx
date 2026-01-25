@@ -30,7 +30,7 @@ const Home: React.FC = () => {
       <div className="hidden lg:block lg:col-span-5">
         <div className="aspect-[4/5] rounded-3xl overflow-hidden border border-zinc-100 shadow-lg">
           <img
-            src="/hero-home.jpg"
+            src="/home_pic.jpg"
             alt="Decision clarity"
             className="w-full h-full object-cover grayscale-[20%]"
           />
