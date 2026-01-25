@@ -36,7 +36,8 @@ export const SERVICE_PILLARS = [
       "Clarity on performance drivers—what actually moves the needle",
       "Faster, less contentious decision cycles",
       "KPIs that lead to action, not noise",
-      "Fewer "number wars" and cleaner accountability",
+      "Fewer \"number wars\" and cleaner accountability",
+
     ],
   },
   {
@@ -80,7 +81,7 @@ export const SERVICE_PILLARS = [
     ],
   },
   {
-    id: "Analytics-Roadmap",
+    id: "analytics-roi-roadmap",
     title: "Analytics ROI Roadmap",
     whoItIsFor:
       "Leadership teams and PMO who want to prioritise analytics initiatives/investments based on business value and define what to build next — without vendor bias or tool hype.",
@@ -100,7 +101,7 @@ export const SERVICE_PILLARS = [
     ],
   },
   {
-    id: "Dashboards-Models",
+    id: "dashboards-models",
     title: "Decision Dashboards & Models",
     whoItIsFor:
       "Functional teams (Sales, Ops, Supply Chain, Finance) who need usable, action-ready dashboards and advanced models—especially where analysis is stuck in spreadsheets.",
@@ -117,7 +118,7 @@ export const SERVICE_PILLARS = [
       "Faster insights with less manual effort and spreadsheet rework",
       "Decision-ready dashboards that tell you what to do next",
       "Better planning accuracy and scenario modeling",
-      "Reduced dependency on Excel heroes",
+      "Reduced dependency on a few \"Excel heroes\",
       "Higher adoption through intuitive design and trainin",
 
     ],
@@ -208,7 +209,8 @@ export const CASE_STUDIES: CaseStudy[] = [
     title: "Data-Driven Allocation, Inventory & Master Data Modernisation",
     industry: "Retail",
     context:
-      "A multi-brand sportswear wholesale and retail operator managing "X" wholesale accounts and "Y" retail outlets with fragmented planning and low-trust product data.",
+      "context:
+  "A multi-brand sportswear wholesale and retail operator managing \"X\" wholesale accounts and \"Y\" retail outlets with fragmented planning and low-trust product data.",
     problem:
       "Allocation and buying decisions were manual and inconsistent, while poor master data reduced trust in reporting and blocked ERP readiness—creating stock imbalances and tying up working capital.",
     approach:
