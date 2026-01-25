@@ -55,9 +55,9 @@ const About: React.FC = () => {
 
                 <p className="text-base md:text-lg text-zinc-700 leading-relaxed text-justify">
                   She holds an <span className="font-semibold text-zinc-900">MBA</span> from{" "}
-                  <span className="font-semibold text-zinc-900">SP Jain School of Global Management (Dubai)</span>,
+                  <span className="font-semibold text-zinc-900">SP Jain School of Global Management (Dubai,UAE)</span>,
                   completed an <span className="font-semibold text-zinc-900">IIT Bombay</span> apprenticeship, and earned
-                  a <span className="font-semibold text-zinc-900">Master&apos;s in Computer Applications</span>.
+                  a <span className="font-semibold text-zinc-900">Master&apos;s in Computer Applications(Mumbai,India)</span>.
                 </p>
               </div>
 
@@ -126,9 +126,9 @@ const About: React.FC = () => {
 
               <div className="absolute -bottom-10 -left-10 p-10 bg-white shadow-xl border border-zinc-50 rounded-sm hidden md:block max-w-[320px]">
                 <p className="text-zinc-900 font-medium text-base italic leading-relaxed text-justify">
-                  "Strategy without measurement logic is just a wish list."
+                  "What gets measured, gets managed."
                 </p>
-                <p className="mt-4 text-zinc-400 text-xs font-bold uppercase tracking-widest">— REMA VAISH</p>
+                <p className="mt-4 text-zinc-400 text-xs font-bold uppercase tracking-widest">— PETER DRUCKER</p>
               </div>
             </div>
           </div>
