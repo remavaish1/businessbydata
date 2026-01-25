@@ -154,7 +154,7 @@ export const SERVICE_PILLARS: ServicePillar[] = [
     outcomes: [
       "Better, faster decisions from business teams",
       "Higher adoption and usage of dashboards and reports",
-      "Reduced dependency on a few "Excel heroes"",
+      'Reduced dependency on a few "Excel heroes"',
       "Managers confident asking better questions of the data",
       "Sustainable, credible reporting culture",
     ],
