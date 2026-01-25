@@ -60,25 +60,7 @@ export const SERVICE_PILLARS: ServicePillar[] = [
       "Clear, actionable roadmap to fix data gaps",
     ],
   },
-  {
-    id: "analytics-modelling",
-    title: "Practical Analytics, Advanced Excel Models and Power BI Dashboards",
-    whoItIsFor:
-      "Teams that need usable models, dashboards, and automated reporting, especially where maturity is evolving or analysis is stuck in manual spreadsheets.",
-    whatWeDeliver: [
-      "Advanced Excel models (forecasting, pricing, inventory, OTB, P&L logic)",
-      "Power BI dashboards designed for decision-making",
-      "Automated reporting packs (weekly/monthly performance)",
-      "Exception reporting and alert logic",
-      "Rapid analytics solutions for low-maturity environments",
-    ],
-    outcomes: [
-      "Faster insights with less manual effort",
-      "Decision-ready dashboards and performance packs",
-      "Better planning accuracy and control",
-      "Improved productivity through automation",
-    ],
-  },
+  
   {
     id: "analytics-roi-roadmap",
     title: "Analytics ROI Roadmap",
