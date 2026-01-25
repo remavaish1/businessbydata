@@ -7,27 +7,35 @@ const Services: React.FC = () => {
       <section className="py-20 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1 text-sm font-semibold text-zinc-700">
-              <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-              Decision & Data Advisory
-            </div>
+         {/* Header */}
+<div>
+  {/* Keep title + intro constrained */}
+  <div className="max-w-3xl">
+    <div className="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1 text-sm font-semibold text-zinc-700">
+      <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+      Decision Analytics & Data Strategy
+    </div>
 
-            <h1 className="mt-5 text-4xl md:text-5xl font-bold tracking-tight text-zinc-900">
-              Decision & Data Advisory
-            </h1>
+    <h1 className="mt-5 text-4xl md:text-5xl font-bold tracking-tight text-zinc-900">
+      Decision & Data Advisory
+    </h1>
 
-            <p className="mt-5 text-xl md:text-2xl text-zinc-600 leading-relaxed">
-              We help leaders define what to measure, validate where the numbers come from, and build decision-ready
-              models, dashboards, and operating rhythms. Strategy first, practical execution always.
-            </p>
+    <p className="mt-5 text-xl md:text-2xl text-zinc-600 leading-relaxed">
+      We help leaders define what to measure, validate where the numbers come from, and build decision-ready
+      models, dashboards, and operating rhythms. Strategy first, practical execution always.
+    </p>
+  </div>
 
-            <div className="mt-8 rounded-2xl border border-zinc-200 bg-zinc-50 p-5">
-              <p className="text-lg text-zinc-700 leading-relaxed">
-                Designed to reduce noise, improve trust in reporting, and make performance reviews more decisive.
-              </p>
-            </div>
-          </div>
+  {/* Make the note box full width */}
+  <div className="mt-8 w-full">
+    <div className="rounded-2xl border border-zinc-200 bg-zinc-50 p-5 w-full">
+      <p className="text-lg text-zinc-700 leading-relaxed">
+        Designed to reduce noise, improve trust in reporting, and make performance reviews more decisive.
+      </p>
+    </div>
+  </div>
+</div>
+
 
           {/* Services */}
           <div className="mt-14 space-y-10">
