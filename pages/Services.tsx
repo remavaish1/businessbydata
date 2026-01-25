@@ -51,15 +51,17 @@ const Services: React.FC = () => {
                     </h2>
                   </div>
 
+             
                   {/* Who it's for */}
-                  <div className="mt-5 max-w-3xl">
+                    <div className="mt-5 w-full">
                     <p className="text-[11px] uppercase tracking-widest text-zinc-500 font-bold">
-                      Who it&apos;s for
+                    Who it&apos;s for
                     </p>
-                    <p className="mt-2 text-base text-zinc-700 leading-relaxed">
-                      {service.whoItIsFor}
-                    </p>
+                    <p className="mt-2 w-full max-w-none text-base text-zinc-700 leading-relaxed text-pretty">
+                    {service.whoItIsFor}
+                  </p>
                   </div>
+
 
                   {/* Content grid */}
                   <div className="mt-8 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8">
