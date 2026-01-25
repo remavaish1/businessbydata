@@ -96,63 +96,13 @@ const About: React.FC = () => {
                     LinkedIn
                   </a>
 
-                  {/* If you want to keep no CTA, delete this Link */}
-                  <Link
-                    to={DISCOVERY_CALL_LINK}
-                    className="inline-flex items-center gap-2 rounded-full bg-zinc-900 px-4 py-2 text-sm font-semibold text-white hover:bg-zinc-800 transition"
-                  >
-                    {PRIMARY_CTA_TEXT}
-                  </Link>
+                
+                
                 </div>
               </section>
             </div>
 
-            {/* Right: Image + Quote + Highlights */}
-            <div className="lg:col-span-5 space-y-6">
-              <div className="rounded-3xl border border-zinc-200 bg-zinc-50/70 p-6 md:p-8 shadow-sm">
-                <div className="rounded-2xl overflow-hidden border border-zinc-200 bg-white">
-                  <img
-                    src="/rema11.JPG"
-                    alt="Rema Vaish"
-                    className="w-full h-auto object-cover"
-                  />
-                </div>
-
-                <div className="mt-6 rounded-2xl border border-zinc-200 bg-white p-5">
-                  <p className="text-lg text-zinc-900 font-semibold leading-relaxed text-pretty">
-                    “Strategy without measurement logic is just a wish list.”
-                  </p>
-                  <p className="mt-3 text-xs uppercase tracking-widest text-zinc-500 font-bold">
-                    — Rema Vaish
-                  </p>
-                </div>
-              </div>
-
-              <div className="rounded-3xl border border-zinc-200 bg-zinc-50/70 p-6 md:p-8 shadow-sm">
-                <p className="text-xs uppercase tracking-widest text-zinc-600 font-bold">
-                  Highlights
-                </p>
-
-                <div className="mt-5 space-y-4">
-                  <div className="rounded-2xl bg-white border border-zinc-200 p-5">
-                    <p className="text-lg font-semibold text-zinc-900">13+ years experience</p>
-                    <p className="mt-2 text-lg text-zinc-700 leading-relaxed text-pretty">
-                      Decision support, governance, BI modernisation, and performance cadence across multiple industries.
-                    </p>
-                  </div>
-
-                  <div className="rounded-2xl bg-white border border-zinc-200 p-5">
-                    <p className="text-lg font-semibold text-zinc-900">Executive-to-technical translation</p>
-                    <p className="mt-2 text-lg text-zinc-700 leading-relaxed text-pretty">
-                      Aligns leadership outcomes to definitions, calculation logic, data requirements, and adoption rhythms.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+         
 
       {/* How I Work (restyled to match Services cards) */}
       <section className="py-20 md:py-24 bg-white border-t border-zinc-100">
