@@ -301,7 +301,7 @@ const Footer: React.FC = () => {
               </a>
 
               {/* Phone */}
-             <a
+             
 <a
   href={`tel:${PHONE_E164}`}
   className="flex items-center gap-3 hover:text-zinc-900 transition-colors"
