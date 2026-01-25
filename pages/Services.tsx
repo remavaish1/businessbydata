@@ -16,7 +16,7 @@ const Services: React.FC = () => {
               </div>
 
               <h1 className="mt-5 text-4xl md:text-5xl font-bold tracking-tight text-zinc-900">
-                Decision &amp; Data Advisory
+                Decision Analytics &amp; Data Advisory
               </h1>
             </div>
 
