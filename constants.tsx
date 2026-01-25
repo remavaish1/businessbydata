@@ -32,11 +32,11 @@ export const SERVICE_PILLARS = [
       "Handoff to dashboards and performance cadence",
     ],
     outcomes: [
-      "✓ Single source of metric truth across the organization",
-      "✓ Clarity on performance drivers—what actually moves the needle",
-      "✓ Faster, less contentious decision cycles",
-      "✓ KPIs that lead to action, not noise",
-      "✓ Fewer "number wars" and cleaner accountability",
+      "Single source of metric truth across the organization",
+      "Clarity on performance drivers—what actually moves the needle",
+      "Faster, less contentious decision cycles",
+      "KPIs that lead to action, not noise",
+      "Fewer "number wars" and cleaner accountability",
     ],
   },
   {
@@ -53,11 +53,11 @@ export const SERVICE_PILLARS = [
       "Practical fix recommendations and engineering-ready backlog",
     ],
     outcomes: [
-      "✓ Reduced reporting discrepancies and manual reconciliations",
-      "✓ End-to-end traceability—every number has a clear source",
-      "✓ Faster time-to-insight from sources to dashboards",
-      "✓ Single version of truth across teams and systems",
-      "✓ Clear, actionable roadmap to fix data gaps",
+      "Reduced reporting discrepancies and manual reconciliations",
+      "End-to-end traceability—every number has a clear source",
+      "Faster time-to-insight from sources to dashboards",
+      "Single version of truth across teams and systems",
+      "Clear, actionable roadmap to fix data gaps",
     ],
   },
   {
@@ -92,18 +92,18 @@ export const SERVICE_PILLARS = [
       "90-day and 6-month execution plan (business-owned)",
     ],
     outcomes: [
-      "✓ Sequenced analytics plan that funds what actually matters",
-      "✓ Reduced spend on low-value reporting and tool sprawl",
-      "✓ Stronger alignment between business priorities and tech investments",
-      "✓ Faster time-to-value for analytics investments",
-      "✓ Clear visibility into value and timing of each initiative",
+      "Sequenced analytics plan that funds what actually matters",
+      "Reduced spend on low-value reporting and tool sprawl",
+      "Stronger alignment between business priorities and tech investments",
+      "Faster time-to-value for analytics investments",
+      "Clear visibility into value and timing of each initiative",
     ],
   },
   {
     id: "Dashboards-Models",
     title: "Decision Dashboards & Models",
     whoItIsFor:
-      Functional teams (Sales, Ops, Supply Chain, Finance) who need usable, action-ready dashboards and advanced models—especially where analysis is stuck in spreadsheets.",
+      "Functional teams (Sales, Ops, Supply Chain, Finance) who need usable, action-ready dashboards and advanced models—especially where analysis is stuck in spreadsheets.",
     whatWeDeliver: [
       "Power BI dashboards designed for decisions (not just visuals)",
       "Advanced Excel models (forecasting, pricing, inventory, P&L, OTB)",
@@ -114,11 +114,11 @@ export const SERVICE_PILLARS = [
 
     ],
     outcomes: [
-      "✓ Faster insights with less manual effort and spreadsheet rework",
-      "✓ Decision-ready dashboards that tell you what to do next",
-      "✓ Better planning accuracy and scenario modeling",
-      "✓ Reduced dependency on Excel heroes",
-      "✓ Higher adoption through intuitive design and trainin",
+      "Faster insights with less manual effort and spreadsheet rework",
+      "Decision-ready dashboards that tell you what to do next",
+      "Better planning accuracy and scenario modeling",
+      "Reduced dependency on Excel heroes",
+      "Higher adoption through intuitive design and trainin",
 
     ],
   },
@@ -136,11 +136,11 @@ export const SERVICE_PILLARS = [
 
     ],
     outcomes: [
-      "✓ Decisions translate into execution—not just discussion",
-      "✓ Clear ownership and follow-through on action items",
-      "✓ Early visibility into issues (reduces firefighting)",
-      "✓ Meetings that matter—focused, efficient, decisive",
-      "✓ Stronger performance culture and accountability",
+      "Decisions translate into execution—not just discussion",
+      "Clear ownership and follow-through on action items",
+      "Early visibility into issues (reduces firefighting)",
+      "Meetings that matter—focused, efficient, decisive",
+      "Stronger performance culture and accountability",
 
     ],
   },
@@ -158,11 +158,11 @@ export const SERVICE_PILLARS = [
 
     ],
     outcomes: [
-  "✓ Better, faster decisions from business teams",
-"✓ Higher adoption and usage of dashboards and reports",
-"✓ Reduced dependency on a few "Excel heroes"",
-"✓ Managers confident asking better questions of the data",
-"✓ Sustainable, credible reporting culture",
+  "Better, faster decisions from business teams",
+"Higher adoption and usage of dashboards and reports",
+"Reduced dependency on a few "Excel heroes"",
+"Managers confident asking better questions of the data",
+"Sustainable, credible reporting culture",
 
     ],
   },
