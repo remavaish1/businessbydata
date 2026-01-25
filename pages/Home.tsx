@@ -6,12 +6,19 @@ const Home: React.FC = () => {
   return (
     <div className="animate-in fade-in duration-700">
       {/* Hero Section */}
-      <section className="bg-white pt-16 sm:pt-20 md:pt-24 pb-10 md:pb-12">
+     <section className="bg-white pt-16 sm:pt-20 md:pt-24 pb-10 md:pb-12">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
       
       {/* LEFT: Hero Text */}
       <div className="lg:col-span-7 max-w-3xl">
+        
+        {/* Service descriptor */}
+        <div className="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1 text-sm font-semibold text-zinc-700 mb-6">
+          <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+          Decision Analytics &amp; Data Strategy Advisory
+        </div>
+
         <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight text-zinc-900 leading-[1.05]">
           <span className="block text-zinc-900">Make Data</span>
           <span className="block whitespace-nowrap text-[#2FB2A2]">Usable.</span>
