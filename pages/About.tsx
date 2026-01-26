@@ -128,7 +128,7 @@ const About: React.FC = () => {
                 <p className="text-zinc-900 font-medium text-base italic leading-relaxed text-justify">
                   "In God we trust. All others must bring data."
                 </p>
-                <p className="mt-4 text-zinc-400 text-xs font-bold uppercase tracking-widest">— PETER DRUCKER</p>
+                <p className="mt-4 text-zinc-400 text-xs font-bold uppercase tracking-widest"></p>
               </div>
             </div>
           </div>
