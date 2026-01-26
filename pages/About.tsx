@@ -126,7 +126,7 @@ const About: React.FC = () => {
 
               <div className="absolute -bottom-10 -left-10 p-10 bg-white shadow-xl border border-zinc-50 rounded-sm hidden md:block max-w-[320px]">
                 <p className="text-zinc-900 font-medium text-base italic leading-relaxed text-justify">
-                  "What gets measured, gets managed."
+                  "In God we trust. All others must bring data."
                 </p>
                 <p className="mt-4 text-zinc-400 text-xs font-bold uppercase tracking-widest">— PETER DRUCKER</p>
               </div>
