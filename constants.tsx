@@ -11,7 +11,7 @@ export const DISCOVERY_CALL_LINK = "/contact";
 /**
  * Centralized contact details
  */
-export const CONTACT_EMAIL = "connect@businessbydata.co";
+export const CONTACT_EMAIL = "businessbydata.rema@gmail.com";
 export const LINKEDIN_PROFILE_URL = "https://www.linkedin.com/in/rema-vaish/";
 
 /* =========================
