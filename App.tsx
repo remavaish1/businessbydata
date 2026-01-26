@@ -14,7 +14,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 
 // ====== CONFIG (Update these once) ======
-const EMAIL = "connect@businessbydata.co";
+const EMAIL = "businessbydata.rema@gmail.com";
 
 // For tel: links. Include "+" for tel: to be safe across devices.
 const PHONE_E164 = "+2349116281642";
