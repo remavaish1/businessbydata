@@ -157,7 +157,7 @@ const Header: React.FC = () => {
                 </span>
 
                 <span className="text-[11px] md:text-xs text-zinc-500 tracking-wide">
-                  Simplifying Data, Amplifying Actions
+                  Business first. Data Always. AI where it matters.
                 </span>
               </div>
             </Link>
