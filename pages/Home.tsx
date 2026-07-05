@@ -24,7 +24,7 @@ const Home: React.FC = () => {
           <span className="block whitespace-nowrap text-[#2FB2A2]">Business</span>
           <span className="block text-zinc-900">Performance</span>
           <span className="block whitespace-nowrap text-[#2FB2A2]">With</span>
-          <span className="block whitespace-nowrap text-[#2FB2A2]">Data & AI.</span>
+           <span className="block text-zinc-900">Data & AI </span>
         </h1>
 
         <p className="mt-8 text-xl md:text-2xl text-zinc-500 leading-relaxed font-light">
