@@ -16,20 +16,20 @@ const Home: React.FC = () => {
         {/* Service descriptor */}
         <div className="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1 text-sm font-semibold text-zinc-700 mb-6">
           <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-          Decision Analytics &amp; Data Strategy Advisory
+          Business Performance Advisory
         </div>
 
         <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight text-zinc-900 leading-[1.05]">
-          <span className="block text-zinc-900">Make Data</span>
-          <span className="block whitespace-nowrap text-[#2FB2A2]">Usable.</span>
-          <span className="block text-zinc-900">Make Better</span>
-          <span className="block whitespace-nowrap text-[#2FB2A2]">Decisions.</span>
+          <span className="block text-zinc-900">Improve</span>
+          <span className="block whitespace-nowrap text-[#2FB2A2]">Business</span>
+          <span className="block text-zinc-900">Performance</span>
+          <span className="block whitespace-nowrap text-[#2FB2A2]">With</span>
+          <span className="block whitespace-nowrap text-[#2FB2A2]">Data & AI.</span>
         </h1>
 
         <p className="mt-8 text-xl md:text-2xl text-zinc-500 leading-relaxed font-light">
-          We help organizations understand, structure, and use data effectively.
-          Get clear direction and measurement logic without building complex systems
-          or hiring massive teams.
+          Business By Data helps leadership teams improve business performance through better reporting, 
+          meaningful KPIs, practical AI and data-driven decision making.
         </p>
       </div>
 
@@ -56,7 +56,7 @@ const Home: React.FC = () => {
       Our Distinction
     </p>
     <p className="text-lg md:text-xl text-zinc-200 font-medium italic leading-relaxed">
-      “We define decision clarity. We don’t build pipelines. We bridge business goals and technical execution.”
+      “We don’t start with AI. We start with the business problem.”
     </p>
   </div>
 </section>
