@@ -20,7 +20,7 @@ export const LINKEDIN_PROFILE_URL = "https://www.linkedin.com/in/rema-vaish/";
 export const SERVICE_PILLARS: ServicePillar[] = [
   {
     id: "business-performance-diagnostic",
-    title: "01 Business Performance Diagnostic™",
+    title: "Business Performance Diagnostic™",
     whoItIsFor:
       "Leadership teams who want a clear, trusted view of business performance and improvement priorities.",
     whatWeDeliver: [
@@ -40,7 +40,7 @@ export const SERVICE_PILLARS: ServicePillar[] = [
   },
   {
     id: "executive-reporting",
-    title: "02 Executive Reporting",
+    title: "Executive Reporting",
     whoItIsFor:
       "CEOs, COOs, CFOs and leadership teams who need better visibility and decision-ready reporting.",
     whatWeDeliver: [
@@ -63,7 +63,7 @@ export const SERVICE_PILLARS: ServicePillar[] = [
   
   {
     id: "performance-management",
-    title: "03 Performance Management",
+    title: "Performance Management",
     whoItIsFor:
       "Businesses that want KPIs, scorecards and review rhythms that drive accountability.",
     whatWeDeliver: [
@@ -85,7 +85,7 @@ export const SERVICE_PILLARS: ServicePillar[] = [
   },
   {
     id: "process-performance-improvement",
-    title: "04 Process Performance Improvement",
+    title: "Process Performance Improvement",
     whoItIsFor:
       "Teams dealing with manual work, duplicated effort, delays and inconsistent processes.",
     whatWeDeliver: [
@@ -107,7 +107,7 @@ export const SERVICE_PILLARS: ServicePillar[] = [
   },
   {
     id: "ai-readiness",
-    title: "05 AI Readiness & Opportunity Assessment",
+    title: "AI Readiness & Opportunity Assessment",
     whoItIsFor:
       "Leadership teams unsure where AI can create measurable business value.",
     whatWeDeliver: [
@@ -129,7 +129,7 @@ export const SERVICE_PILLARS: ServicePillar[] = [
   },
   {
     id: "data-ai-capability",
-    title: "06 Data & AI Capability Building",
+    title: "Data & AI Capability Building",
     whoItIsFor:
       "Leaders, managers and teams who need practical Data & AI confidence.",
     whatWeDeliver: [
