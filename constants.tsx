@@ -97,7 +97,7 @@ export const SERVICE_PILLARS: ServicePillar[] = [
 
     ],
     outcomes: [
-      ""Reduced manual effort",
+      "Reduced manual effort",
 "Faster workflows",
 "Improved efficiency",
 "Better process visibility",
