@@ -11,7 +11,7 @@ import Home from "./pages/Home";
 import Services from "./pages/Services";
 import Portfolio from "./pages/Case Studies";
 import About from "./pages/About";
-import Contact from "./pages/Contact";
+
 
 // ====== CONFIG (Update these once) ======
 const EMAIL = "businessbydata.rema@gmail.com";
