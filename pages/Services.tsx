@@ -12,7 +12,7 @@ const Services: React.FC = () => {
             <div className="max-w-3xl">
               <div className="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1 text-sm font-semibold text-zinc-700">
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-                Decision Analytics &amp; Data Strategy
+                Business Peformance Advisory  
               </div>
 
               <h1 className="mt-5 text-4xl md:text-5xl font-bold tracking-tight text-zinc-900">
@@ -22,15 +22,15 @@ const Services: React.FC = () => {
 
             {/* Intro paragraph (FULL WIDTH) */}
             <p className="mt-5 text-xl md:text-2xl text-zinc-600 leading-relaxed w-full max-w-none text-pretty">
-              We help leaders define what to measure, validate where the numbers come from, and build decision-ready
-              models, dashboards, and operating rhythms. Strategy first, practical execution always.
+              Business By Data helps leadership teams improve business performance through 
+              better reporting, meaningful KPIs, practical AI, process improvement and data-driven decision making.
             </p>
 
             {/* Note box (FULL WIDTH) */}
             <div className="mt-8 w-full">
               <div className="rounded-2xl border border-zinc-200 bg-zinc-50 p-5">
                 <p className="text-lg text-zinc-700 leading-relaxed text-pretty">
-                  Designed to reduce noise, improve trust in reporting, and make performance reviews more decisive.
+                 Designed to help leaders gain clarity, improve performance and turn data into better business decisions.
                 </p>
               </div>
             </div>
