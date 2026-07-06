@@ -111,7 +111,7 @@ export const SERVICE_PILLARS: ServicePillar[] = [
     whoItIsFor:
       "Leadership teams unsure where AI can create measurable business value.",
     whatWeDeliver: [
-      ""AI readiness assessment",
+      "AI readiness assessment",
 "Business use-case identification",
 "Data readiness review",
 "AI opportunity prioritisation",
