@@ -35,3 +35,23 @@
 @keyframes bbd-experience-scroll{to{transform:translateX(-50%)}}
 @media(max-width:650px){.experience-strip-heading-bbd{align-items:flex-start;flex-direction:column;gap:8px}.experience-group-bbd{gap:36px;padding-right:36px}.experience-wordmark-bbd{font-size:17px}}
 @media(prefers-reduced-motion:reduce){.experience-track-bbd{animation:none}.experience-group-bbd[aria-hidden=true]{display:none}}
+
+/* Homepage performance-gain accordion */
+.help-section{padding:88px 4.5vw 96px;border-bottom:1px solid #dfe3e6}
+.help-heading{display:grid;grid-template-columns:1fr 1fr;align-items:end;gap:32px;margin-bottom:30px}
+.help-heading .section-index{margin:0 0 12px;color:var(--teal);text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:700}
+.help-heading h2{font-size:clamp(42px,4.2vw,64px);line-height:1.03;letter-spacing:-.055em}
+.help-heading>p{justify-self:end;max-width:390px;color:var(--muted);font-size:15px;line-height:1.6}
+.gain-list{border-top:1px solid #c9d0cf}
+.gain-item{border-bottom:1px solid #c9d0cf}
+.gain-item summary{list-style:none;display:grid;grid-template-columns:48px 1fr 24px;align-items:center;gap:8px;min-height:58px;cursor:pointer}
+.gain-item summary::-webkit-details-marker{display:none}
+.gain-number{color:var(--teal);font-size:10px}
+.gain-title{font-size:16px}
+.gain-toggle{color:#138b7e;font-size:20px;text-align:center;line-height:1}
+.gain-item[open] .gain-toggle{transform:rotate(45deg)}
+.gain-content{padding:0 40px 18px 56px;max-width:760px;color:var(--muted);font-size:14px;line-height:1.6}
+.gain-content p{margin:0 0 10px}
+.gain-content a{display:inline-flex;gap:9px;align-items:center;color:var(--ink);border-bottom:1px solid var(--teal);padding-bottom:3px;font-size:13px}
+.gain-content a span{color:var(--teal)}
+@media(max-width:700px){.help-section{padding:68px 22px}.help-heading{grid-template-columns:1fr;gap:14px;margin-bottom:24px}.help-heading>p{justify-self:start}.gain-item summary{grid-template-columns:36px 1fr 24px;min-height:56px}.gain-title{font-size:15px}.gain-content{padding:0 28px 18px 44px}}
