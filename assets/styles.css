@@ -136,3 +136,33 @@
 .bbd-interest-options button:hover,.bbd-interest-options button:focus { border-color:#2fb2a2; background:#effaf8; }
 .bbd-interest-close { position:absolute; top:12px; right:14px; border:0; padding:8px; font-size:24px; cursor:pointer; }
 @media(max-width:700px) { .bbd-motion,.bbd-interest { padding:64px 6vw; } .bbd-motion-head { display:block; } .bbd-motion-grid { grid-template-columns:1fr; } .bbd-motion-grid img { height:300px; } .bbd-interest-panel { padding:30px 22px; } .bbd-interest-launcher { right:12px; bottom:12px; } }
+/* Improve visibility of the Where do we start section */
+.help-section {
+  background: #e7f4f1;
+  color: #123b38;
+}
+.help-heading h2 {
+  color: #123b38;
+}
+.help-heading > p,
+.gain-content {
+  color: #385b57;
+}
+.gain-list,
+.gain-item {
+  border-color: #9abdb6;
+}
+.gain-item summary {
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background-color .2s ease;
+}
+.gain-item summary:hover,
+.gain-item[open] summary {
+  background: #d2ebe5;
+}
+.gain-number,
+.gain-toggle,
+.help-heading .section-index {
+  color: #087f70;
+}
