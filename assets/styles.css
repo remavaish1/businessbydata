@@ -166,3 +166,13 @@
 .help-heading .section-index {
   color: #087f70;
 }
+/* Keep the Where should we start trigger visible */
+[data-bbd-interest-open] {
+  opacity: 1 !important;
+  visibility: visible !important;
+  filter: none !important;
+  animation: none !important;
+  box-shadow: 0 10px 28px rgba(47, 178, 162, .28);
+  outline: 2px solid rgba(47, 178, 162, .22);
+  outline-offset: 3px;
+}
