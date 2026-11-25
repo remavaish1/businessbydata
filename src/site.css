@@ -93,6 +93,7 @@ h1{font-size:clamp(3.25rem,6vw,6rem);letter-spacing:-.055em;line-height:1.02}
 .header nav{column-gap:clamp(.85rem,2.2vw,1.75rem)}
 .header .nav-link{text-underline-offset:4px}
 
+
 .workshop-explore {
   display: inline-block;
   margin: 0 1rem 1rem;
@@ -100,31 +101,30 @@ h1{font-size:clamp(3.25rem,6vw,6rem);letter-spacing:-.055em;line-height:1.02}
   font-weight: 700;
 }
 
-.workshop-catalog { padding-block: clamp(3rem, 7vw, 6rem); }
-.workshop-pathway { margin-top: 1rem; scroll-margin-top: 5rem; }
-.workshop-pathway > summary {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: .85rem 1rem;
-  border: 2px solid var(--border);
-  border-radius: 1rem;
-  background: var(--card);
-  cursor: pointer;
-  list-style: none;
+.workshop-catalog {
+  border-top: 2px solid var(--border);
+  padding-block: clamp(3rem, 7vw, 6rem);
 }
-.workshop-pathway > summary::-webkit-details-marker { display: none; }
-.workshop-pathway > summary::after { content: "+" / ""; font: 700 1.25rem var(--label); }
-.workshop-pathway[open] > summary::after { content: "−" / ""; }
-.workshop-pathway h3 { margin: 0; font-size: clamp(1.4rem, 3vw, 2rem); line-height: 1.2; }
-.workshop-pathway h3 .label { display: block; margin-bottom: .25rem; }
-.workshop-pathway > p { margin: .85rem 0 0; }
+.workshop-pathway { margin-top: 2rem; scroll-margin-top: 5rem; }
+.workshop-pathway h3 { font-size: clamp(1.6rem, 3vw, 2.4rem); }
 .workshop-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
   gap: 1rem;
-  margin-top: 1rem;
+  margin-block: 1rem 2rem;
+}
+
+.workshop-grid:not(:has(details[open])) {
+  grid-auto-rows: 1fr;
+}
+
+.workshop-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.workshop-card > details {
+  margin-top: auto;
 }
 
 .workshop-card,
@@ -137,11 +137,27 @@ h1{font-size:clamp(3.25rem,6vw,6rem);letter-spacing:-.055em;line-height:1.02}
 .workshop-card h4 { margin: 0; font-size: 1.2rem; }
 .workshop-card p { margin: .5rem 0; }
 .workshop-meta { font-size: .9rem; font-weight: 700; }
-.workshop-card summary { cursor: pointer; font-weight: 700; }
-.workshop-details dt { font-weight: 700; }
-.workshop-details dd { margin: 0 0 .65rem; }
-.workshop-details ul { margin-block: .25rem; }
+.workshop-card summary {
+  background: var(--lilac);
+  color: var(--foreground);
+  border: 1px solid var(--border);
+  border-radius: .5rem;
+  padding: .45rem .65rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.workshop-card summary:hover,
+.workshop-card summary:focus-visible {
+  background: var(--citrus);
+}
+.workshop-card details strong {
+  font-family: var(--body);
+  font-weight: 700;
+}
+
 .workshop-card ul { padding-left: 1.2rem; }
+.workshop-card li + li { margin-top: .5rem; }
 .workshop-card .button { margin-top: .75rem; }
 
 .workshop-enquiry {
@@ -165,3 +181,12 @@ h1{font-size:clamp(3.25rem,6vw,6rem);letter-spacing:-.055em;line-height:1.02}
 
 .workshop-enquiry button { justify-self: start; margin-top: .5rem; }
 .enquiry-status:empty { display: none; }
+
+.workshop-picker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin-top: 1rem;
+}
+
+.workshop-catalog [hidden] { display: none; }

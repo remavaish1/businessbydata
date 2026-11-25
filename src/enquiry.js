@@ -7,6 +7,11 @@ const enquiryEndpoint = '';
 
 document.querySelectorAll('[data-workshop]').forEach(link => {
   link.addEventListener('click', () => {
+    const chosenGroup = [...workshopChoice.options].find(option => option.value === link.dataset.workshop).parentElement;
+    workshopChoice.querySelectorAll('optgroup').forEach(group => {
+      group.hidden = group !== chosenGroup;
+      group.disabled = group !== chosenGroup;
+    });
     workshopChoice.value = link.dataset.workshop;
     enquiryStatus.textContent = '';
     workshopChoice.focus({ preventScroll: true });
@@ -56,3 +61,37 @@ enquiryForm.addEventListener('submit', async event => {
     enquiryButton.disabled = false;
   }
 });
+
+const workshopCatalog = document.querySelector('#workshops');
+const pathwayPanels = [...workshopCatalog.querySelectorAll('.workshop-pathway')];
+const pathwayPicker = workshopCatalog.querySelector('.workshop-picker');
+
+document.querySelectorAll('a[href="#contact"]').forEach(link => {
+  link.addEventListener('click', () => {
+    workshopChoice.querySelectorAll('optgroup').forEach(group => {
+      group.hidden = false;
+      group.disabled = false;
+    });
+    workshopChoice.value = '';
+    enquiryStatus.textContent = '';
+  });
+});
+
+function showSelectedPathway() {
+  // Keep the current pathway when jumping from a workshop to its enquiry form.
+  if (window.location.hash === '#enquiry') return;
+  const selected = pathwayPanels.find(panel => `#${panel.id}` === window.location.hash);
+  pathwayPanels.forEach(panel => {
+    panel.hidden = panel !== selected;
+  });
+  pathwayPicker.hidden = Boolean(selected);
+  if (selected) requestAnimationFrame(() => selected.scrollIntoView());
+}
+
+window.addEventListener('hashchange', showSelectedPathway);
+document.querySelectorAll('.workshop-explore, .workshop-picker a').forEach(link => {
+  link.addEventListener('click', () => {
+    if (link.hash === window.location.hash) showSelectedPathway();
+  });
+});
+showSelectedPathway();
