@@ -101,13 +101,30 @@ h1{font-size:clamp(3.25rem,6vw,6rem);letter-spacing:-.055em;line-height:1.02}
 }
 
 .workshop-catalog { padding-block: clamp(3rem, 7vw, 6rem); }
-.workshop-pathway { margin-top: 2rem; scroll-margin-top: 5rem; }
-.workshop-pathway h3 { font-size: clamp(1.6rem, 3vw, 2.4rem); }
+.workshop-pathway { margin-top: 1rem; scroll-margin-top: 5rem; }
+.workshop-pathway > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: .85rem 1rem;
+  border: 2px solid var(--border);
+  border-radius: 1rem;
+  background: var(--card);
+  cursor: pointer;
+  list-style: none;
+}
+.workshop-pathway > summary::-webkit-details-marker { display: none; }
+.workshop-pathway > summary::after { content: "+" / ""; font: 700 1.25rem var(--label); }
+.workshop-pathway[open] > summary::after { content: "−" / ""; }
+.workshop-pathway h3 { margin: 0; font-size: clamp(1.4rem, 3vw, 2rem); line-height: 1.2; }
+.workshop-pathway h3 .label { display: block; margin-bottom: .25rem; }
+.workshop-pathway > p { margin: .85rem 0 0; }
 .workshop-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
   gap: 1rem;
-  margin-block: 1rem 2rem;
+  margin-top: 1rem;
 }
 
 .workshop-card,
